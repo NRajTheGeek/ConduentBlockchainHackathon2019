@@ -1,0 +1,1632 @@
+{
+  "contractName": "RFPEMD_Fee",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "name": "_payableTo",
+          "type": "string"
+        },
+        {
+          "name": "_payableAt",
+          "type": "string"
+        }
+      ],
+      "name": "addEMDDetails",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_feePayableTo",
+          "type": "string"
+        },
+        {
+          "name": "_feePayableAt",
+          "type": "string"
+        },
+        {
+          "name": "_payableFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "addFeeDetails",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60806040526000805560018055600280556003805534801561002057600080fd5b50610308806100306000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635a8243ce14610051578063622ed7ae1461010a575b600080fd5b34801561005d57600080fd5b5061010860048036038101908080359060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192905050506101c3565b005b34801561011657600080fd5b506101c1600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001909291905050506101fd565b005b82600a8190555081600890805190602001906101e0929190610237565b5080600990805190602001906101f7929190610237565b50505050565b82600b9080519060200190610213929190610237565b5081600c908051906020019061022a929190610237565b5080600d81905550505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061027857805160ff19168380011785556102a6565b828001600101855582156102a6579182015b828111156102a557825182559160200191906001019061028a565b5b5090506102b391906102b7565b5090565b6102d991905b808211156102d55760008160009055506001016102bd565b5090565b905600a165627a7a723058202675e474be559c40ff4b7518f1886f7c476b2be414f28228b816d255b951efff0029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635a8243ce14610051578063622ed7ae1461010a575b600080fd5b34801561005d57600080fd5b5061010860048036038101908080359060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192905050506101c3565b005b34801561011657600080fd5b506101c1600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001909291905050506101fd565b005b82600a8190555081600890805190602001906101e0929190610237565b5080600990805190602001906101f7929190610237565b50505050565b82600b9080519060200190610213929190610237565b5081600c908051906020019061022a929190610237565b5080600d81905550505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061027857805160ff19168380011785556102a6565b828001600101855582156102a6579182015b828111156102a557825182559160200191906001019061028a565b5b5090506102b391906102b7565b5090565b6102d991905b808211156102d55760008160009055506001016102bd565b5090565b905600a165627a7a723058202675e474be559c40ff4b7518f1886f7c476b2be414f28228b816d255b951efff0029",
+  "sourceMap": "309:791:6:-;;;2450:1:10;2433:18;;2474:1;2458:17;;2499:1;2482:18;;2524:1;2507:18;;430:15:6;8:9:-1;5:2;;;30:1;27;20:12;5:2;430:15:6;309:791;;;;;;",
+  "deployedSourceMap": "309:791:6:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;455:261;;8:9:-1;5:2;;;30:1;27;20:12;5:2;455:261:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;813:279;;8:9:-1;5:2;;;30:1;27;20:12;5:2;813:279:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;455:261;622:7;613:6;:16;;;;651:10;639:9;:22;;;;;;;;;;;;:::i;:::-;;683:10;671:9;:22;;;;;;;;;;;;:::i;:::-;;455:261;;;:::o;813:279::-;984:13;969:12;:28;;;;;;;;;;;;:::i;:::-;;1022:13;1007:12;:28;;;;;;;;;;;;:::i;:::-;;1058:11;1045:10;:24;;;;813:279;;;:::o;309:791::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.22;\n\n/* Author: Neeraj Kumar\n * \n * Being a public contract: This will host the following features:\n *  - launching the RFP\n *  - start and end date of accepting application (bids) \n *  - disclosure of bids only after the dead line of bidding is over  \n *  - \n*/\n\nimport \"./Utils.sol\";\n\n\ncontract RFPEMD_Fee is Utils {\n    \n    string payableTo;\n    string payableAt;\n    uint amount;\n    // bool state;\n\n    constructor(){}\n    \n    function addEMDDetails(\n        uint    _amount,\n        string _payableTo,\n        string memory  _payableAt\n    )\n    public \n    // modifier\n    {\n        amount = _amount;\n        payableTo = _payableTo;\n        payableAt = _payableAt;\n        // true\n    }\n\n    string feePayableTo;\n    string feePayableAt;\n    uint payableFee;\n    // bool state;\n\n    function addFeeDetails(\n        string _feePayableTo,\n        string _feePayableAt,\n        uint _payableFee\n    )\n    public \n    //modifier\n    {\n        feePayableTo = _feePayableTo;\n        feePayableAt = _feePayableAt;\n        payableFee = _payableFee;\n        // true\n    }\n\n    \n}\n",
+  "sourcePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPEMD_Fee.sol",
+  "ast": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPEMD_Fee.sol",
+    "exportedSymbols": {
+      "RFPEMD_Fee": [
+        610
+      ]
+    },
+    "id": 611,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 546,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:6"
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Utils.sol",
+        "file": "./Utils.sol",
+        "id": 547,
+        "nodeType": "ImportDirective",
+        "scope": 611,
+        "sourceUnit": 1234,
+        "src": "285:21:6",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 548,
+              "name": "Utils",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1233,
+              "src": "332:5:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Utils_$1233",
+                "typeString": "contract Utils"
+              }
+            },
+            "id": 549,
+            "nodeType": "InheritanceSpecifier",
+            "src": "332:5:6"
+          }
+        ],
+        "contractDependencies": [
+          862,
+          878,
+          885,
+          904,
+          911,
+          927,
+          937,
+          1233
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 610,
+        "linearizedBaseContracts": [
+          610,
+          1233,
+          937,
+          927,
+          911,
+          904,
+          885,
+          878,
+          862
+        ],
+        "name": "RFPEMD_Fee",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 551,
+            "name": "payableTo",
+            "nodeType": "VariableDeclaration",
+            "scope": 610,
+            "src": "349:16:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 550,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "349:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 553,
+            "name": "payableAt",
+            "nodeType": "VariableDeclaration",
+            "scope": 610,
+            "src": "371:16:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 552,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "371:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 555,
+            "name": "amount",
+            "nodeType": "VariableDeclaration",
+            "scope": 610,
+            "src": "393:11:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 554,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "393:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 558,
+              "nodeType": "Block",
+              "src": "443:2:6",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 559,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 556,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "441:2:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 557,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "443:0:6"
+            },
+            "scope": 610,
+            "src": "430:15:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 580,
+              "nodeType": "Block",
+              "src": "603:113:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 570,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 568,
+                      "name": "amount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 555,
+                      "src": "613:6:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 569,
+                      "name": "_amount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 561,
+                      "src": "622:7:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "613:16:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 571,
+                  "nodeType": "ExpressionStatement",
+                  "src": "613:16:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 574,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 572,
+                      "name": "payableTo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 551,
+                      "src": "639:9:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 573,
+                      "name": "_payableTo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 563,
+                      "src": "651:10:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "639:22:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 575,
+                  "nodeType": "ExpressionStatement",
+                  "src": "639:22:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 578,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 576,
+                      "name": "payableAt",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 553,
+                      "src": "671:9:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 577,
+                      "name": "_payableAt",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 565,
+                      "src": "683:10:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "671:22:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 579,
+                  "nodeType": "ExpressionStatement",
+                  "src": "671:22:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 581,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addEMDDetails",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 566,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 561,
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 581,
+                  "src": "487:15:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 560,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "487:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 563,
+                  "name": "_payableTo",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 581,
+                  "src": "512:17:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 562,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "512:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 565,
+                  "name": "_payableAt",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 581,
+                  "src": "539:25:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 564,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "539:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "477:93:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 567,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "603:0:6"
+            },
+            "scope": 610,
+            "src": "455:261:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 583,
+            "name": "feePayableTo",
+            "nodeType": "VariableDeclaration",
+            "scope": 610,
+            "src": "722:19:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 582,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "722:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 585,
+            "name": "feePayableAt",
+            "nodeType": "VariableDeclaration",
+            "scope": 610,
+            "src": "747:19:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 584,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "747:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 587,
+            "name": "payableFee",
+            "nodeType": "VariableDeclaration",
+            "scope": 610,
+            "src": "772:15:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 586,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "772:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 608,
+              "nodeType": "Block",
+              "src": "959:133:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 598,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 596,
+                      "name": "feePayableTo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 583,
+                      "src": "969:12:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 597,
+                      "name": "_feePayableTo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 589,
+                      "src": "984:13:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "969:28:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 599,
+                  "nodeType": "ExpressionStatement",
+                  "src": "969:28:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 602,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 600,
+                      "name": "feePayableAt",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 585,
+                      "src": "1007:12:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 601,
+                      "name": "_feePayableAt",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 591,
+                      "src": "1022:13:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1007:28:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 603,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1007:28:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 606,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 604,
+                      "name": "payableFee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 587,
+                      "src": "1045:10:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 605,
+                      "name": "_payableFee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 593,
+                      "src": "1058:11:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1045:24:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 607,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1045:24:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 609,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addFeeDetails",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 594,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 589,
+                  "name": "_feePayableTo",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 609,
+                  "src": "845:20:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 588,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "845:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 591,
+                  "name": "_feePayableAt",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 609,
+                  "src": "875:20:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 590,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "875:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 593,
+                  "name": "_payableFee",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 609,
+                  "src": "905:16:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 592,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "905:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "835:92:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 595,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "959:0:6"
+            },
+            "scope": 610,
+            "src": "813:279:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 611,
+        "src": "309:791:6"
+      }
+    ],
+    "src": "0:1101:6"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPEMD_Fee.sol",
+    "exportedSymbols": {
+      "RFPEMD_Fee": [
+        610
+      ]
+    },
+    "id": 611,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 546,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:6"
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Utils.sol",
+        "file": "./Utils.sol",
+        "id": 547,
+        "nodeType": "ImportDirective",
+        "scope": 611,
+        "sourceUnit": 1234,
+        "src": "285:21:6",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 548,
+              "name": "Utils",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1233,
+              "src": "332:5:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Utils_$1233",
+                "typeString": "contract Utils"
+              }
+            },
+            "id": 549,
+            "nodeType": "InheritanceSpecifier",
+            "src": "332:5:6"
+          }
+        ],
+        "contractDependencies": [
+          862,
+          878,
+          885,
+          904,
+          911,
+          927,
+          937,
+          1233
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 610,
+        "linearizedBaseContracts": [
+          610,
+          1233,
+          937,
+          927,
+          911,
+          904,
+          885,
+          878,
+          862
+        ],
+        "name": "RFPEMD_Fee",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 551,
+            "name": "payableTo",
+            "nodeType": "VariableDeclaration",
+            "scope": 610,
+            "src": "349:16:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 550,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "349:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 553,
+            "name": "payableAt",
+            "nodeType": "VariableDeclaration",
+            "scope": 610,
+            "src": "371:16:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 552,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "371:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 555,
+            "name": "amount",
+            "nodeType": "VariableDeclaration",
+            "scope": 610,
+            "src": "393:11:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 554,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "393:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 558,
+              "nodeType": "Block",
+              "src": "443:2:6",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 559,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 556,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "441:2:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 557,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "443:0:6"
+            },
+            "scope": 610,
+            "src": "430:15:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 580,
+              "nodeType": "Block",
+              "src": "603:113:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 570,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 568,
+                      "name": "amount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 555,
+                      "src": "613:6:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 569,
+                      "name": "_amount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 561,
+                      "src": "622:7:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "613:16:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 571,
+                  "nodeType": "ExpressionStatement",
+                  "src": "613:16:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 574,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 572,
+                      "name": "payableTo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 551,
+                      "src": "639:9:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 573,
+                      "name": "_payableTo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 563,
+                      "src": "651:10:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "639:22:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 575,
+                  "nodeType": "ExpressionStatement",
+                  "src": "639:22:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 578,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 576,
+                      "name": "payableAt",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 553,
+                      "src": "671:9:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 577,
+                      "name": "_payableAt",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 565,
+                      "src": "683:10:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "671:22:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 579,
+                  "nodeType": "ExpressionStatement",
+                  "src": "671:22:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 581,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addEMDDetails",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 566,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 561,
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 581,
+                  "src": "487:15:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 560,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "487:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 563,
+                  "name": "_payableTo",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 581,
+                  "src": "512:17:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 562,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "512:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 565,
+                  "name": "_payableAt",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 581,
+                  "src": "539:25:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 564,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "539:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "477:93:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 567,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "603:0:6"
+            },
+            "scope": 610,
+            "src": "455:261:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 583,
+            "name": "feePayableTo",
+            "nodeType": "VariableDeclaration",
+            "scope": 610,
+            "src": "722:19:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 582,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "722:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 585,
+            "name": "feePayableAt",
+            "nodeType": "VariableDeclaration",
+            "scope": 610,
+            "src": "747:19:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 584,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "747:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 587,
+            "name": "payableFee",
+            "nodeType": "VariableDeclaration",
+            "scope": 610,
+            "src": "772:15:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 586,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "772:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 608,
+              "nodeType": "Block",
+              "src": "959:133:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 598,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 596,
+                      "name": "feePayableTo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 583,
+                      "src": "969:12:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 597,
+                      "name": "_feePayableTo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 589,
+                      "src": "984:13:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "969:28:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 599,
+                  "nodeType": "ExpressionStatement",
+                  "src": "969:28:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 602,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 600,
+                      "name": "feePayableAt",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 585,
+                      "src": "1007:12:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 601,
+                      "name": "_feePayableAt",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 591,
+                      "src": "1022:13:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1007:28:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 603,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1007:28:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 606,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 604,
+                      "name": "payableFee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 587,
+                      "src": "1045:10:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 605,
+                      "name": "_payableFee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 593,
+                      "src": "1058:11:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1045:24:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 607,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1045:24:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 609,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addFeeDetails",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 594,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 589,
+                  "name": "_feePayableTo",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 609,
+                  "src": "845:20:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 588,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "845:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 591,
+                  "name": "_feePayableAt",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 609,
+                  "src": "875:20:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 590,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "875:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 593,
+                  "name": "_payableFee",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 609,
+                  "src": "905:16:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 592,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "905:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "835:92:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 595,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "959:0:6"
+            },
+            "scope": 610,
+            "src": "813:279:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 611,
+        "src": "309:791:6"
+      }
+    ],
+    "src": "0:1101:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.2",
+  "updatedAt": "2019-06-23T02:31:29.932Z"
+}

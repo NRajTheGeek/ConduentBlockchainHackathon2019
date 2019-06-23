@@ -1,0 +1,97 @@
+{
+  "contractName": "Review",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a723058206876f2d6e4291361a74a716ec1a32c2fc7d1225ce06adbd5fb608ee71d55caaf0029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a723058206876f2d6e4291361a74a716ec1a32c2fc7d1225ce06adbd5fb608ee71d55caaf0029",
+  "sourceMap": "26:24:15:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:24:15;;;;;;;",
+  "deployedSourceMap": "26:24:15:-;;;;;",
+  "source": "pragma solidity ^0.4.22;\n\ncontract Review {\n    \n}\n",
+  "sourcePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Review.sol",
+  "ast": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Review.sol",
+    "exportedSymbols": {
+      "Review": [
+        1775
+      ]
+    },
+    "id": 1776,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1774,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:15"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1775,
+        "linearizedBaseContracts": [
+          1775
+        ],
+        "name": "Review",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1776,
+        "src": "26:24:15"
+      }
+    ],
+    "src": "0:51:15"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Review.sol",
+    "exportedSymbols": {
+      "Review": [
+        1775
+      ]
+    },
+    "id": 1776,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1774,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:15"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1775,
+        "linearizedBaseContracts": [
+          1775
+        ],
+        "name": "Review",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1776,
+        "src": "26:24:15"
+      }
+    ],
+    "src": "0:51:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.2",
+  "updatedAt": "2019-06-23T02:24:27.027Z"
+}

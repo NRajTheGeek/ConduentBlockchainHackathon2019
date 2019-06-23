@@ -1,0 +1,3 @@
+[*] Starting Constellation node
+14:15:13 [INFO] Log level is LevelWarn
+14:15:13 [WARN] /home/node/keys/VANode.key is too accessible. Please run: chmod 0600 /home/node/keys/VANode.key

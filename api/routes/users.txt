@@ -1,0 +1,9 @@
+{users:[{username:"Bidder1",role:"Bidder",password:"",accountAddress:"",Dept:"",Org:"L&T"},
+    {username:"Government1",role:"Government",password:"",accountAddress:"",Dept:"AIRPORT",Org:"Airports Authority of India"},
+    {username:"Government2",role:"Government",password:"",accountAddress:"",Dept:"AIRPORT",Org:"Airports Authority of India"},
+    {username:"Government3",role:"Government",password:"",accountAddress:"",Dept:"AIRPORT",Org:"Airports Authority of India"},
+    {username:"Government4",role:"Government",password:"",accountAddress:"",Dept:"POWER",Org:"Aravali Power Company"},
+    {username:"Government5",role:"Government",password:"",accountAddress:"",Dept:"POWER",Org:"North Eastern"},
+    {username:"Bidder2",role:"Bidder",password:"",accountAddress:"",Dept:"IndiGo"},
+    {username:"Auditor1",role:"Auditor",password:"",accountAddress:"",Dept:"",Org:"EY"}
+    ]}

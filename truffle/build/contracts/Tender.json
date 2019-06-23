@@ -1,0 +1,97 @@
+{
+  "contractName": "Tender",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820f8ebf6128f7fd2a0da56a25a2387c371ffd44bfa64454dfd59ba7f4b543c736e0029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820f8ebf6128f7fd2a0da56a25a2387c371ffd44bfa64454dfd59ba7f4b543c736e0029",
+  "sourceMap": "26:29:16:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:29:16;;;;;;;",
+  "deployedSourceMap": "26:29:16:-;;;;;",
+  "source": "pragma solidity ^0.4.22;\n\ncontract Tender {\n    \n    \n}\n",
+  "sourcePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Tender.sol",
+  "ast": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Tender.sol",
+    "exportedSymbols": {
+      "Tender": [
+        1778
+      ]
+    },
+    "id": 1779,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1777,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:16"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1778,
+        "linearizedBaseContracts": [
+          1778
+        ],
+        "name": "Tender",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1779,
+        "src": "26:29:16"
+      }
+    ],
+    "src": "0:56:16"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Tender.sol",
+    "exportedSymbols": {
+      "Tender": [
+        1778
+      ]
+    },
+    "id": 1779,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1777,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:16"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1778,
+        "linearizedBaseContracts": [
+          1778
+        ],
+        "name": "Tender",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1779,
+        "src": "26:29:16"
+      }
+    ],
+    "src": "0:56:16"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.2",
+  "updatedAt": "2019-06-23T02:24:27.027Z"
+}

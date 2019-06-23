@@ -1,0 +1,2201 @@
+{
+  "contractName": "KYCTypes",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_KYCTypeID",
+          "type": "string"
+        }
+      ],
+      "name": "getKYCTypeDetailsByTypeID",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        },
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "uint8"
+        },
+        {
+          "name": "",
+          "type": "uint8"
+        },
+        {
+          "name": "",
+          "type": "uint8"
+        },
+        {
+          "name": "neccessaryDocumentTypes",
+          "type": "uint8[]"
+        },
+        {
+          "name": "optionalDocumentTypes",
+          "type": "uint8[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60806040526000805560018055600280556003805534801561002057600080fd5b506105b8806100306000396000f300608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630b939c1914610046575b600080fd5b34801561005257600080fd5b506100ad600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290505050610212565b60405180806020018873ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018760ff1660ff1681526020018660ff1660ff1681526020018560ff1660ff168152602001806020018060200184810384528b818151815260200191508051906020019080838360005b8381101561014b578082015181840152602081019050610130565b50505050905090810190601f1680156101785780820380516001836020036101000a031916815260200191505b50848103835286818151815260200191508051906020019060200280838360005b838110156101b4578082015181840152602081019050610199565b50505050905001848103825285818151815260200191508051906020019060200280838360005b838110156101f65780820151818401526020810190506101db565b505050509050019a505050505050505050505060405180910390f35b606060008060008060608061022561052f565b600a896040518082805190602001908083835b60208310151561025d5780518252602082019150602081019050602083039250610238565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060e06040519081016040529081600082018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103355780601f1061030a57610100808354040283529160200191610335565b820191906000526020600020905b81548152906001019060200180831161031857829003601f168201915b505050505081526020016001820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016001820160149054906101000a900460ff1660ff1660ff1681526020016001820160159054906101000a900460ff1660ff1660ff1681526020016001820160169054906101000a900460ff1660ff1660ff1681526020016002820180548060200260200160405190810160405280929190818152602001828054801561046057602002820191906000526020600020906000905b82829054906101000a900460ff1660ff16815260200190600101906020826000010492830192600103820291508084116104295790505b50505050508152602001600382018054806020026020016040519081016040528092919081815260200182805480156104de57602002820191906000526020600020906000905b82829054906101000a900460ff1660ff16815260200190600101906020826000010492830192600103820291508084116104a75790505b5050505050815250509050806000015181602001518260400151836060015184608001518560a001518660c00151869650819150809050975097509750975097509750975050919395979092949650565b60e06040519081016040528060608152602001600073ffffffffffffffffffffffffffffffffffffffff168152602001600060ff168152602001600060ff168152602001600060ff168152602001606081526020016060815250905600a165627a7a72305820448d4c59eb41912c47e013b000032231329462f736048ad2b0165eb866f3672a0029",
+  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630b939c1914610046575b600080fd5b34801561005257600080fd5b506100ad600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290505050610212565b60405180806020018873ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018760ff1660ff1681526020018660ff1660ff1681526020018560ff1660ff168152602001806020018060200184810384528b818151815260200191508051906020019080838360005b8381101561014b578082015181840152602081019050610130565b50505050905090810190601f1680156101785780820380516001836020036101000a031916815260200191505b50848103835286818151815260200191508051906020019060200280838360005b838110156101b4578082015181840152602081019050610199565b50505050905001848103825285818151815260200191508051906020019060200280838360005b838110156101f65780820151818401526020810190506101db565b505050509050019a505050505050505050505060405180910390f35b606060008060008060608061022561052f565b600a896040518082805190602001908083835b60208310151561025d5780518252602082019150602081019050602083039250610238565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060e06040519081016040529081600082018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103355780601f1061030a57610100808354040283529160200191610335565b820191906000526020600020905b81548152906001019060200180831161031857829003601f168201915b505050505081526020016001820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016001820160149054906101000a900460ff1660ff1660ff1681526020016001820160159054906101000a900460ff1660ff1660ff1681526020016001820160169054906101000a900460ff1660ff1660ff1681526020016002820180548060200260200160405190810160405280929190818152602001828054801561046057602002820191906000526020600020906000905b82829054906101000a900460ff1660ff16815260200190600101906020826000010492830192600103820291508084116104295790505b50505050508152602001600382018054806020026020016040519081016040528092919081815260200182805480156104de57602002820191906000526020600020906000905b82829054906101000a900460ff1660ff16815260200190600101906020826000010492830192600103820291508084116104a75790505b5050505050815250509050806000015181602001518260400151836060015184608001518560a001518660c00151869650819150809050975097509750975097509750975050919395979092949650565b60e06040519081016040528060608152602001600073ffffffffffffffffffffffffffffffffffffffff168152602001600060ff168152602001600060ff168152602001600060ff168152602001606081526020016060815250905600a165627a7a72305820448d4c59eb41912c47e013b000032231329462f736048ad2b0165eb866f3672a0029",
+  "sourceMap": "171:1661:5:-;;;2450:1:18;2433:18;;2474:1;2458:17;;2499:1;2482:18;;2524:1;2507:18;;877:244:5;8:9:-1;5:2;;;30:1;27;20:12;5:2;877:244:5;171:1661;;;;;;",
+  "deployedSourceMap": "171:1661:5:-;;;;;;;;;;;;;;;;;;;;;;;;1133:691;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1133:691:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1133:691:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1133:691:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1133:691:5;;;;;;;;;;;;;;;;;;;;;;;;;;1310:6;1327:7;1345:5;1361;1377;1393:38;1442:36;1502:25;;:::i;:::-;1530:17;1548:10;1530:29;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;51:19;36:153;;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;1530:29:5;;;;;;;;;;;;;;;;;;;;;1502:57;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1592:3;:13;;;1620:3;:21;;;1656:3;:11;;;1682:3;:10;;;1707:3;:16;;;1738:3;:27;;;1780:3;:25;;;1570:246;;;;;;;;;;;;;;;;;;;;;;;1133:691;;;;;;;;;;:::o;171:1661::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.22;\r\n\r\n/* Author: Neeraj Kumar\r\n * \r\n * private contract: This will host the following features:\r\n *  - KYC  \r\n *  - \r\n*/\r\n\r\nimport \"./Utils.sol\";\r\n\r\ncontract KYCTypes is Utils {\r\n    \r\n    address private owner;\r\n    \r\n    struct KYCTypeDetails {\r\n        string KYCTypeID;\r\n        address initializingParty;\r\n        // auditor, member, bidder/user\r\n        uint8 KYCType; // mapit with a string NAME/explanation\r\n        uint8 status;   \r\n        uint8 KYCTypeState; // map it with a btes32 for the active, deactive, stalled states\r\n        \r\n        uint8[] neccessaryDocumentTypes;\r\n        uint8[] optionalDocumentTypes;\r\n    }\r\n    \r\n    mapping (uint8=>string) KYCTypesExplanation;\r\n    \r\n    //KYCTypeID to KYCDEtails\r\n    mapping (string => KYCTypeDetails) KYCTypesAvailable;\r\n    \r\n    mapping(uint8 => string) KYCTypeStatusStrings;\r\n    \r\n    constructor () public {\r\n        // KYCTypesExplanation[KYC_TYPE_AUDITOR]   = \"Auditor KYC\";\r\n        // KYCTypesExplanation[KYC_TYPE_COM_MEMBER]= \"Com Member KYC\";\r\n        // KYCTypesExplanation[KYC_TYPE_USR_BIDDER]= \"User/Bidder KYC\";\r\n    }\r\n    \r\n    function getKYCTypeDetailsByTypeID(\r\n        string _KYCTypeID\r\n    ) \r\n    public \r\n    view \r\n    // modifier: check the KYC type exists by the TypeID\r\n    returns (\r\n        string,\r\n        address,\r\n        uint8,\r\n        uint8,\r\n        uint8,\r\n        uint8[] memory neccessaryDocumentTypes,\r\n        uint8[] memory optionalDocumentTypes\r\n    )\r\n    {\r\n        KYCTypeDetails memory kyd = KYCTypesAvailable[_KYCTypeID];\r\n        return (\r\n            kyd.KYCTypeID,\r\n            kyd.initializingParty,\r\n            kyd.KYCType,\r\n            kyd.status,\r\n            kyd.KYCTypeState,\r\n            kyd.neccessaryDocumentTypes,\r\n            kyd.optionalDocumentTypes\r\n        );\r\n    }\r\n   \r\n}\r\n",
+  "sourcePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/KYCTypes.sol",
+  "ast": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/KYCTypes.sol",
+    "exportedSymbols": {
+      "KYCTypes": [
+        1290
+      ]
+    },
+    "id": 1291,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1207,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Utils.sol",
+        "file": "./Utils.sol",
+        "id": 1208,
+        "nodeType": "ImportDirective",
+        "scope": 1291,
+        "sourceUnit": 2294,
+        "src": "146:21:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1209,
+              "name": "Utils",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2293,
+              "src": "192:5:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Utils_$2293",
+                "typeString": "contract Utils"
+              }
+            },
+            "id": 1210,
+            "nodeType": "InheritanceSpecifier",
+            "src": "192:5:5"
+          }
+        ],
+        "contractDependencies": [
+          1922,
+          1938,
+          1945,
+          1964,
+          1971,
+          1987,
+          1997,
+          2293
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1290,
+        "linearizedBaseContracts": [
+          1290,
+          2293,
+          1997,
+          1987,
+          1971,
+          1964,
+          1945,
+          1938,
+          1922
+        ],
+        "name": "KYCTypes",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1212,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 1290,
+            "src": "211:21:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 1211,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "211:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "canonicalName": "KYCTypes.KYCTypeDetails",
+            "id": 1229,
+            "members": [
+              {
+                "constant": false,
+                "id": 1214,
+                "name": "KYCTypeID",
+                "nodeType": "VariableDeclaration",
+                "scope": 1229,
+                "src": "278:16:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1213,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "278:6:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1216,
+                "name": "initializingParty",
+                "nodeType": "VariableDeclaration",
+                "scope": 1229,
+                "src": "305:25:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1215,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "305:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1218,
+                "name": "KYCType",
+                "nodeType": "VariableDeclaration",
+                "scope": 1229,
+                "src": "382:13:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 1217,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "382:5:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1220,
+                "name": "status",
+                "nodeType": "VariableDeclaration",
+                "scope": 1229,
+                "src": "446:12:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 1219,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "446:5:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1222,
+                "name": "KYCTypeState",
+                "nodeType": "VariableDeclaration",
+                "scope": 1229,
+                "src": "472:18:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 1221,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "472:5:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1225,
+                "name": "neccessaryDocumentTypes",
+                "nodeType": "VariableDeclaration",
+                "scope": 1229,
+                "src": "576:31:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                  "typeString": "uint8[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 1223,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "576:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "id": 1224,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "576:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                    "typeString": "uint8[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1228,
+                "name": "optionalDocumentTypes",
+                "nodeType": "VariableDeclaration",
+                "scope": 1229,
+                "src": "618:29:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                  "typeString": "uint8[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 1226,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "618:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "id": 1227,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "618:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                    "typeString": "uint8[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "KYCTypeDetails",
+            "nodeType": "StructDefinition",
+            "scope": 1290,
+            "src": "245:410:5",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1233,
+            "name": "KYCTypesExplanation",
+            "nodeType": "VariableDeclaration",
+            "scope": 1290,
+            "src": "667:43:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint8_$_t_string_storage_$",
+              "typeString": "mapping(uint8 => string)"
+            },
+            "typeName": {
+              "id": 1232,
+              "keyType": {
+                "id": 1230,
+                "name": "uint8",
+                "nodeType": "ElementaryTypeName",
+                "src": "676:5:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "667:23:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint8_$_t_string_storage_$",
+                "typeString": "mapping(uint8 => string)"
+              },
+              "valueType": {
+                "id": 1231,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "683:6:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1237,
+            "name": "KYCTypesAvailable",
+            "nodeType": "VariableDeclaration",
+            "scope": 1290,
+            "src": "754:52:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_KYCTypeDetails_$1229_storage_$",
+              "typeString": "mapping(string => struct KYCTypes.KYCTypeDetails)"
+            },
+            "typeName": {
+              "id": 1236,
+              "keyType": {
+                "id": 1234,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "763:6:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "754:34:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_KYCTypeDetails_$1229_storage_$",
+                "typeString": "mapping(string => struct KYCTypes.KYCTypeDetails)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 1235,
+                "name": "KYCTypeDetails",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 1229,
+                "src": "773:14:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_storage_ptr",
+                  "typeString": "struct KYCTypes.KYCTypeDetails"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1241,
+            "name": "KYCTypeStatusStrings",
+            "nodeType": "VariableDeclaration",
+            "scope": 1290,
+            "src": "819:45:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint8_$_t_string_storage_$",
+              "typeString": "mapping(uint8 => string)"
+            },
+            "typeName": {
+              "id": 1240,
+              "keyType": {
+                "id": 1238,
+                "name": "uint8",
+                "nodeType": "ElementaryTypeName",
+                "src": "827:5:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "819:24:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint8_$_t_string_storage_$",
+                "typeString": "mapping(uint8 => string)"
+              },
+              "valueType": {
+                "id": 1239,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "836:6:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 1244,
+              "nodeType": "Block",
+              "src": "899:222:5",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 1245,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1242,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "889:2:5"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1243,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "899:0:5"
+            },
+            "scope": 1290,
+            "src": "877:244:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1288,
+              "nodeType": "Block",
+              "src": "1491:333:5",
+              "statements": [
+                {
+                  "assignments": [
+                    1267
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1267,
+                      "name": "kyd",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1289,
+                      "src": "1502:25:5",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                        "typeString": "struct KYCTypes.KYCTypeDetails"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 1266,
+                        "name": "KYCTypeDetails",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 1229,
+                        "src": "1502:14:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_storage_ptr",
+                          "typeString": "struct KYCTypes.KYCTypeDetails"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1271,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 1268,
+                      "name": "KYCTypesAvailable",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1237,
+                      "src": "1530:17:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_KYCTypeDetails_$1229_storage_$",
+                        "typeString": "mapping(string memory => struct KYCTypes.KYCTypeDetails storage ref)"
+                      }
+                    },
+                    "id": 1270,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 1269,
+                      "name": "_KYCTypeID",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1247,
+                      "src": "1548:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "1530:29:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_storage",
+                      "typeString": "struct KYCTypes.KYCTypeDetails storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1502:57:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1272,
+                          "name": "kyd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1267,
+                          "src": "1592:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                            "typeString": "struct KYCTypes.KYCTypeDetails memory"
+                          }
+                        },
+                        "id": 1273,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "KYCTypeID",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 1214,
+                        "src": "1592:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1274,
+                          "name": "kyd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1267,
+                          "src": "1620:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                            "typeString": "struct KYCTypes.KYCTypeDetails memory"
+                          }
+                        },
+                        "id": 1275,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "initializingParty",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 1216,
+                        "src": "1620:21:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1276,
+                          "name": "kyd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1267,
+                          "src": "1656:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                            "typeString": "struct KYCTypes.KYCTypeDetails memory"
+                          }
+                        },
+                        "id": 1277,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "KYCType",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 1218,
+                        "src": "1656:11:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1278,
+                          "name": "kyd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1267,
+                          "src": "1682:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                            "typeString": "struct KYCTypes.KYCTypeDetails memory"
+                          }
+                        },
+                        "id": 1279,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "status",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 1220,
+                        "src": "1682:10:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1280,
+                          "name": "kyd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1267,
+                          "src": "1707:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                            "typeString": "struct KYCTypes.KYCTypeDetails memory"
+                          }
+                        },
+                        "id": 1281,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "KYCTypeState",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 1222,
+                        "src": "1707:16:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1282,
+                          "name": "kyd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1267,
+                          "src": "1738:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                            "typeString": "struct KYCTypes.KYCTypeDetails memory"
+                          }
+                        },
+                        "id": 1283,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "neccessaryDocumentTypes",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 1225,
+                        "src": "1738:27:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint8_$dyn_memory",
+                          "typeString": "uint8[] memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1284,
+                          "name": "kyd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1267,
+                          "src": "1780:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                            "typeString": "struct KYCTypes.KYCTypeDetails memory"
+                          }
+                        },
+                        "id": 1285,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "optionalDocumentTypes",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 1228,
+                        "src": "1780:25:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint8_$dyn_memory",
+                          "typeString": "uint8[] memory"
+                        }
+                      }
+                    ],
+                    "id": 1286,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "1577:239:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_string_memory_$_t_address_$_t_uint8_$_t_uint8_$_t_uint8_$_t_array$_t_uint8_$dyn_memory_$_t_array$_t_uint8_$dyn_memory_$",
+                      "typeString": "tuple(string memory,address,uint8,uint8,uint8,uint8[] memory,uint8[] memory)"
+                    }
+                  },
+                  "functionReturnParameters": 1265,
+                  "id": 1287,
+                  "nodeType": "Return",
+                  "src": "1570:246:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1289,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getKYCTypeDetailsByTypeID",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1248,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1247,
+                  "name": "_KYCTypeID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1178:17:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1246,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1178:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1167:35:5"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1265,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1250,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1310:6:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1249,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1310:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1252,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1327:7:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1251,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1327:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1254,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1345:5:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 1253,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1345:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1256,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1361:5:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 1255,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1361:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1258,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1377:5:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 1257,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1377:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1261,
+                  "name": "neccessaryDocumentTypes",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1393:38:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
+                    "typeString": "uint8[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 1259,
+                      "name": "uint8",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1393:5:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "id": 1260,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1393:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                      "typeString": "uint8[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1264,
+                  "name": "optionalDocumentTypes",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1442:36:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
+                    "typeString": "uint8[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 1262,
+                      "name": "uint8",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1442:5:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "id": 1263,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1442:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                      "typeString": "uint8[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1299:186:5"
+            },
+            "scope": 1290,
+            "src": "1133:691:5",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1291,
+        "src": "171:1661:5"
+      }
+    ],
+    "src": "0:1834:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/KYCTypes.sol",
+    "exportedSymbols": {
+      "KYCTypes": [
+        1290
+      ]
+    },
+    "id": 1291,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1207,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Utils.sol",
+        "file": "./Utils.sol",
+        "id": 1208,
+        "nodeType": "ImportDirective",
+        "scope": 1291,
+        "sourceUnit": 2294,
+        "src": "146:21:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1209,
+              "name": "Utils",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2293,
+              "src": "192:5:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Utils_$2293",
+                "typeString": "contract Utils"
+              }
+            },
+            "id": 1210,
+            "nodeType": "InheritanceSpecifier",
+            "src": "192:5:5"
+          }
+        ],
+        "contractDependencies": [
+          1922,
+          1938,
+          1945,
+          1964,
+          1971,
+          1987,
+          1997,
+          2293
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1290,
+        "linearizedBaseContracts": [
+          1290,
+          2293,
+          1997,
+          1987,
+          1971,
+          1964,
+          1945,
+          1938,
+          1922
+        ],
+        "name": "KYCTypes",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1212,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 1290,
+            "src": "211:21:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 1211,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "211:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "canonicalName": "KYCTypes.KYCTypeDetails",
+            "id": 1229,
+            "members": [
+              {
+                "constant": false,
+                "id": 1214,
+                "name": "KYCTypeID",
+                "nodeType": "VariableDeclaration",
+                "scope": 1229,
+                "src": "278:16:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1213,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "278:6:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1216,
+                "name": "initializingParty",
+                "nodeType": "VariableDeclaration",
+                "scope": 1229,
+                "src": "305:25:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1215,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "305:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1218,
+                "name": "KYCType",
+                "nodeType": "VariableDeclaration",
+                "scope": 1229,
+                "src": "382:13:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 1217,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "382:5:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1220,
+                "name": "status",
+                "nodeType": "VariableDeclaration",
+                "scope": 1229,
+                "src": "446:12:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 1219,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "446:5:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1222,
+                "name": "KYCTypeState",
+                "nodeType": "VariableDeclaration",
+                "scope": 1229,
+                "src": "472:18:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 1221,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "472:5:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1225,
+                "name": "neccessaryDocumentTypes",
+                "nodeType": "VariableDeclaration",
+                "scope": 1229,
+                "src": "576:31:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                  "typeString": "uint8[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 1223,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "576:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "id": 1224,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "576:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                    "typeString": "uint8[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1228,
+                "name": "optionalDocumentTypes",
+                "nodeType": "VariableDeclaration",
+                "scope": 1229,
+                "src": "618:29:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                  "typeString": "uint8[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 1226,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "618:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "id": 1227,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "618:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                    "typeString": "uint8[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "KYCTypeDetails",
+            "nodeType": "StructDefinition",
+            "scope": 1290,
+            "src": "245:410:5",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1233,
+            "name": "KYCTypesExplanation",
+            "nodeType": "VariableDeclaration",
+            "scope": 1290,
+            "src": "667:43:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint8_$_t_string_storage_$",
+              "typeString": "mapping(uint8 => string)"
+            },
+            "typeName": {
+              "id": 1232,
+              "keyType": {
+                "id": 1230,
+                "name": "uint8",
+                "nodeType": "ElementaryTypeName",
+                "src": "676:5:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "667:23:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint8_$_t_string_storage_$",
+                "typeString": "mapping(uint8 => string)"
+              },
+              "valueType": {
+                "id": 1231,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "683:6:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1237,
+            "name": "KYCTypesAvailable",
+            "nodeType": "VariableDeclaration",
+            "scope": 1290,
+            "src": "754:52:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_KYCTypeDetails_$1229_storage_$",
+              "typeString": "mapping(string => struct KYCTypes.KYCTypeDetails)"
+            },
+            "typeName": {
+              "id": 1236,
+              "keyType": {
+                "id": 1234,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "763:6:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "754:34:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_KYCTypeDetails_$1229_storage_$",
+                "typeString": "mapping(string => struct KYCTypes.KYCTypeDetails)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 1235,
+                "name": "KYCTypeDetails",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 1229,
+                "src": "773:14:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_storage_ptr",
+                  "typeString": "struct KYCTypes.KYCTypeDetails"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1241,
+            "name": "KYCTypeStatusStrings",
+            "nodeType": "VariableDeclaration",
+            "scope": 1290,
+            "src": "819:45:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint8_$_t_string_storage_$",
+              "typeString": "mapping(uint8 => string)"
+            },
+            "typeName": {
+              "id": 1240,
+              "keyType": {
+                "id": 1238,
+                "name": "uint8",
+                "nodeType": "ElementaryTypeName",
+                "src": "827:5:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "819:24:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint8_$_t_string_storage_$",
+                "typeString": "mapping(uint8 => string)"
+              },
+              "valueType": {
+                "id": 1239,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "836:6:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 1244,
+              "nodeType": "Block",
+              "src": "899:222:5",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 1245,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1242,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "889:2:5"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1243,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "899:0:5"
+            },
+            "scope": 1290,
+            "src": "877:244:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1288,
+              "nodeType": "Block",
+              "src": "1491:333:5",
+              "statements": [
+                {
+                  "assignments": [
+                    1267
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1267,
+                      "name": "kyd",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1289,
+                      "src": "1502:25:5",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                        "typeString": "struct KYCTypes.KYCTypeDetails"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 1266,
+                        "name": "KYCTypeDetails",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 1229,
+                        "src": "1502:14:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_storage_ptr",
+                          "typeString": "struct KYCTypes.KYCTypeDetails"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1271,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 1268,
+                      "name": "KYCTypesAvailable",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1237,
+                      "src": "1530:17:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_KYCTypeDetails_$1229_storage_$",
+                        "typeString": "mapping(string memory => struct KYCTypes.KYCTypeDetails storage ref)"
+                      }
+                    },
+                    "id": 1270,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 1269,
+                      "name": "_KYCTypeID",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1247,
+                      "src": "1548:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "1530:29:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_storage",
+                      "typeString": "struct KYCTypes.KYCTypeDetails storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1502:57:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1272,
+                          "name": "kyd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1267,
+                          "src": "1592:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                            "typeString": "struct KYCTypes.KYCTypeDetails memory"
+                          }
+                        },
+                        "id": 1273,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "KYCTypeID",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 1214,
+                        "src": "1592:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1274,
+                          "name": "kyd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1267,
+                          "src": "1620:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                            "typeString": "struct KYCTypes.KYCTypeDetails memory"
+                          }
+                        },
+                        "id": 1275,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "initializingParty",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 1216,
+                        "src": "1620:21:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1276,
+                          "name": "kyd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1267,
+                          "src": "1656:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                            "typeString": "struct KYCTypes.KYCTypeDetails memory"
+                          }
+                        },
+                        "id": 1277,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "KYCType",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 1218,
+                        "src": "1656:11:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1278,
+                          "name": "kyd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1267,
+                          "src": "1682:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                            "typeString": "struct KYCTypes.KYCTypeDetails memory"
+                          }
+                        },
+                        "id": 1279,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "status",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 1220,
+                        "src": "1682:10:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1280,
+                          "name": "kyd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1267,
+                          "src": "1707:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                            "typeString": "struct KYCTypes.KYCTypeDetails memory"
+                          }
+                        },
+                        "id": 1281,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "KYCTypeState",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 1222,
+                        "src": "1707:16:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1282,
+                          "name": "kyd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1267,
+                          "src": "1738:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                            "typeString": "struct KYCTypes.KYCTypeDetails memory"
+                          }
+                        },
+                        "id": 1283,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "neccessaryDocumentTypes",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 1225,
+                        "src": "1738:27:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint8_$dyn_memory",
+                          "typeString": "uint8[] memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1284,
+                          "name": "kyd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1267,
+                          "src": "1780:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_KYCTypeDetails_$1229_memory_ptr",
+                            "typeString": "struct KYCTypes.KYCTypeDetails memory"
+                          }
+                        },
+                        "id": 1285,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "optionalDocumentTypes",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 1228,
+                        "src": "1780:25:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint8_$dyn_memory",
+                          "typeString": "uint8[] memory"
+                        }
+                      }
+                    ],
+                    "id": 1286,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "1577:239:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_string_memory_$_t_address_$_t_uint8_$_t_uint8_$_t_uint8_$_t_array$_t_uint8_$dyn_memory_$_t_array$_t_uint8_$dyn_memory_$",
+                      "typeString": "tuple(string memory,address,uint8,uint8,uint8,uint8[] memory,uint8[] memory)"
+                    }
+                  },
+                  "functionReturnParameters": 1265,
+                  "id": 1287,
+                  "nodeType": "Return",
+                  "src": "1570:246:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1289,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getKYCTypeDetailsByTypeID",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1248,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1247,
+                  "name": "_KYCTypeID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1178:17:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1246,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1178:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1167:35:5"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1265,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1250,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1310:6:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1249,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1310:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1252,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1327:7:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1251,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1327:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1254,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1345:5:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 1253,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1345:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1256,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1361:5:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 1255,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1361:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1258,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1377:5:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 1257,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1377:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1261,
+                  "name": "neccessaryDocumentTypes",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1393:38:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
+                    "typeString": "uint8[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 1259,
+                      "name": "uint8",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1393:5:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "id": 1260,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1393:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                      "typeString": "uint8[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1264,
+                  "name": "optionalDocumentTypes",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1289,
+                  "src": "1442:36:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
+                    "typeString": "uint8[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 1262,
+                      "name": "uint8",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1442:5:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "id": 1263,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1442:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                      "typeString": "uint8[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1299:186:5"
+            },
+            "scope": 1290,
+            "src": "1133:691:5",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1291,
+        "src": "171:1661:5"
+      }
+    ],
+    "src": "0:1834:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.2",
+  "updatedAt": "2019-06-23T02:24:27.047Z"
+}

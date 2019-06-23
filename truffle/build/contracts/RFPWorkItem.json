@@ -1,0 +1,1350 @@
+{
+  "contractName": "RFPWorkItem",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_title",
+          "type": "string"
+        },
+        {
+          "name": "_tenderValue",
+          "type": "uint256"
+        },
+        {
+          "name": "_category",
+          "type": "string"
+        },
+        {
+          "name": "_bidValidity",
+          "type": "string"
+        },
+        {
+          "name": "_periodOfWork",
+          "type": "string"
+        }
+      ],
+      "name": "addWorkItemDetails",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60806040526000805560018055600280556003805534801561002057600080fd5b506102c6806100306000396000f300608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063fcd57bd014610046575b600080fd5b34801561005257600080fd5b50610189600480360381019080803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929080359060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929050505061018b565b005b84600890805190602001906101a19291906101f5565b508360098190555082600a90805190602001906101bf9291906101f5565b5081600b90805190602001906101d69291906101f5565b5080600c90805190602001906101ed9291906101f5565b505050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061023657805160ff1916838001178555610264565b82800160010185558215610264579182015b82811115610263578251825591602001919060010190610248565b5b5090506102719190610275565b5090565b61029791905b8082111561029357600081600090555060010161027b565b5090565b905600a165627a7a72305820b791e641b1d2ad9ca25a79e4a3a5249777cec70a5513ee1758bbaa2a0cd126e50029",
+  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063fcd57bd014610046575b600080fd5b34801561005257600080fd5b50610189600480360381019080803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929080359060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929050505061018b565b005b84600890805190602001906101a19291906101f5565b508360098190555082600a90805190602001906101bf9291906101f5565b5081600b90805190602001906101d69291906101f5565b5080600c90805190602001906101ed9291906101f5565b505050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061023657805160ff1916838001178555610264565b82800160010185558215610264579182015b82811115610263578251825591602001919060010190610248565b5b5090506102719190610275565b5090565b61029791905b8082111561029357600081600090555060010161027b565b5090565b905600a165627a7a72305820b791e641b1d2ad9ca25a79e4a3a5249777cec70a5513ee1758bbaa2a0cd126e50029",
+  "sourceMap": "308:707:7:-;;;2450:1:10;2433:18;;2474:1;2458:17;;2499:1;2482:18;;2524:1;2507:18;;504:24:7;8:9:-1;5:2;;;30:1;27;20:12;5:2;504:24:7;308:707;;;;;;",
+  "deployedSourceMap": "308:707:7:-;;;;;;;;;;;;;;;;;;;;;;;;534:472;;8:9:-1;5:2;;;30:1;27;20:12;5:2;534:472:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;787:6;780:5;:13;;;;;;;;;;;;:::i;:::-;;817:12;803:11;:26;;;;849:9;838:8;:20;;;;;;;;;;;;:::i;:::-;;881:12;867:11;:26;;;;;;;;;;;;:::i;:::-;;917:13;902:12;:28;;;;;;;;;;;;:::i;:::-;;534:472;;;;;:::o;308:707::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.22;\n\n/* Author: Neeraj Kumar\n * \n * Being a public contract: This will host the following features:\n *  - launching the RFP\n *  - start and end date of accepting application (bids) \n *  - disclosure of bids only after the dead line of bidding is over  \n *  - \n*/\n\nimport \"./Utils.sol\";\n\ncontract RFPWorkItem is Utils {\n    string title;\n    uint tenderValue;\n    string category;\n    string bidValidity;\n    string periodOfWork;\n    //string workDescription;\n    // bool state;\n\n    constructor () public {}\n\n    function addWorkItemDetails(\n        string _title,\n        uint    _tenderValue,\n        string _category,\n        string _bidValidity,\n       string _periodOfWork\n       //string _workDescription\n    ) \n    public \n    //modifier\n    {\n        title =_title;\n        tenderValue = _tenderValue;\n       category = _category;\n       bidValidity = _bidValidity;\n       periodOfWork = _periodOfWork;\n       // workDescription = _workDescription;\n        //return true;\n    }\n      \n}\n",
+  "sourcePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPWorkItem.sol",
+  "ast": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPWorkItem.sol",
+    "exportedSymbols": {
+      "RFPWorkItem": [
+        664
+      ]
+    },
+    "id": 665,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 612,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:7"
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Utils.sol",
+        "file": "./Utils.sol",
+        "id": 613,
+        "nodeType": "ImportDirective",
+        "scope": 665,
+        "sourceUnit": 1234,
+        "src": "285:21:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 614,
+              "name": "Utils",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1233,
+              "src": "332:5:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Utils_$1233",
+                "typeString": "contract Utils"
+              }
+            },
+            "id": 615,
+            "nodeType": "InheritanceSpecifier",
+            "src": "332:5:7"
+          }
+        ],
+        "contractDependencies": [
+          862,
+          878,
+          885,
+          904,
+          911,
+          927,
+          937,
+          1233
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 664,
+        "linearizedBaseContracts": [
+          664,
+          1233,
+          937,
+          927,
+          911,
+          904,
+          885,
+          878,
+          862
+        ],
+        "name": "RFPWorkItem",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 617,
+            "name": "title",
+            "nodeType": "VariableDeclaration",
+            "scope": 664,
+            "src": "344:12:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 616,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "344:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 619,
+            "name": "tenderValue",
+            "nodeType": "VariableDeclaration",
+            "scope": 664,
+            "src": "362:16:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 618,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "362:4:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 621,
+            "name": "category",
+            "nodeType": "VariableDeclaration",
+            "scope": 664,
+            "src": "384:15:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 620,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "384:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 623,
+            "name": "bidValidity",
+            "nodeType": "VariableDeclaration",
+            "scope": 664,
+            "src": "405:18:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 622,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "405:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 625,
+            "name": "periodOfWork",
+            "nodeType": "VariableDeclaration",
+            "scope": 664,
+            "src": "429:19:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 624,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "429:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 628,
+              "nodeType": "Block",
+              "src": "526:2:7",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 629,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 626,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "516:2:7"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 627,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "526:0:7"
+            },
+            "scope": 664,
+            "src": "504:24:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 662,
+              "nodeType": "Block",
+              "src": "770:236:7",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 644,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 642,
+                      "name": "title",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 617,
+                      "src": "780:5:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 643,
+                      "name": "_title",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 631,
+                      "src": "787:6:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "780:13:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 645,
+                  "nodeType": "ExpressionStatement",
+                  "src": "780:13:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 648,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 646,
+                      "name": "tenderValue",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 619,
+                      "src": "803:11:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 647,
+                      "name": "_tenderValue",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 633,
+                      "src": "817:12:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "803:26:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 649,
+                  "nodeType": "ExpressionStatement",
+                  "src": "803:26:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 652,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 650,
+                      "name": "category",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 621,
+                      "src": "838:8:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 651,
+                      "name": "_category",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 635,
+                      "src": "849:9:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "838:20:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 653,
+                  "nodeType": "ExpressionStatement",
+                  "src": "838:20:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 656,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 654,
+                      "name": "bidValidity",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 623,
+                      "src": "867:11:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 655,
+                      "name": "_bidValidity",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 637,
+                      "src": "881:12:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "867:26:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 657,
+                  "nodeType": "ExpressionStatement",
+                  "src": "867:26:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 660,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 658,
+                      "name": "periodOfWork",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 625,
+                      "src": "902:12:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 659,
+                      "name": "_periodOfWork",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 639,
+                      "src": "917:13:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "902:28:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 661,
+                  "nodeType": "ExpressionStatement",
+                  "src": "902:28:7"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 663,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addWorkItemDetails",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 640,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 631,
+                  "name": "_title",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 663,
+                  "src": "571:13:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 630,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "571:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 633,
+                  "name": "_tenderValue",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 663,
+                  "src": "594:20:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 632,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "594:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 635,
+                  "name": "_category",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 663,
+                  "src": "624:16:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 634,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "624:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 637,
+                  "name": "_bidValidity",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 663,
+                  "src": "650:19:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 636,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "650:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 639,
+                  "name": "_periodOfWork",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 663,
+                  "src": "678:20:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 638,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "678:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "561:176:7"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 641,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "770:0:7"
+            },
+            "scope": 664,
+            "src": "534:472:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 665,
+        "src": "308:707:7"
+      }
+    ],
+    "src": "0:1016:7"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPWorkItem.sol",
+    "exportedSymbols": {
+      "RFPWorkItem": [
+        664
+      ]
+    },
+    "id": 665,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 612,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:7"
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Utils.sol",
+        "file": "./Utils.sol",
+        "id": 613,
+        "nodeType": "ImportDirective",
+        "scope": 665,
+        "sourceUnit": 1234,
+        "src": "285:21:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 614,
+              "name": "Utils",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1233,
+              "src": "332:5:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Utils_$1233",
+                "typeString": "contract Utils"
+              }
+            },
+            "id": 615,
+            "nodeType": "InheritanceSpecifier",
+            "src": "332:5:7"
+          }
+        ],
+        "contractDependencies": [
+          862,
+          878,
+          885,
+          904,
+          911,
+          927,
+          937,
+          1233
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 664,
+        "linearizedBaseContracts": [
+          664,
+          1233,
+          937,
+          927,
+          911,
+          904,
+          885,
+          878,
+          862
+        ],
+        "name": "RFPWorkItem",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 617,
+            "name": "title",
+            "nodeType": "VariableDeclaration",
+            "scope": 664,
+            "src": "344:12:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 616,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "344:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 619,
+            "name": "tenderValue",
+            "nodeType": "VariableDeclaration",
+            "scope": 664,
+            "src": "362:16:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 618,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "362:4:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 621,
+            "name": "category",
+            "nodeType": "VariableDeclaration",
+            "scope": 664,
+            "src": "384:15:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 620,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "384:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 623,
+            "name": "bidValidity",
+            "nodeType": "VariableDeclaration",
+            "scope": 664,
+            "src": "405:18:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 622,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "405:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 625,
+            "name": "periodOfWork",
+            "nodeType": "VariableDeclaration",
+            "scope": 664,
+            "src": "429:19:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 624,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "429:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 628,
+              "nodeType": "Block",
+              "src": "526:2:7",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 629,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 626,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "516:2:7"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 627,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "526:0:7"
+            },
+            "scope": 664,
+            "src": "504:24:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 662,
+              "nodeType": "Block",
+              "src": "770:236:7",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 644,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 642,
+                      "name": "title",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 617,
+                      "src": "780:5:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 643,
+                      "name": "_title",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 631,
+                      "src": "787:6:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "780:13:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 645,
+                  "nodeType": "ExpressionStatement",
+                  "src": "780:13:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 648,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 646,
+                      "name": "tenderValue",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 619,
+                      "src": "803:11:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 647,
+                      "name": "_tenderValue",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 633,
+                      "src": "817:12:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "803:26:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 649,
+                  "nodeType": "ExpressionStatement",
+                  "src": "803:26:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 652,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 650,
+                      "name": "category",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 621,
+                      "src": "838:8:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 651,
+                      "name": "_category",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 635,
+                      "src": "849:9:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "838:20:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 653,
+                  "nodeType": "ExpressionStatement",
+                  "src": "838:20:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 656,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 654,
+                      "name": "bidValidity",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 623,
+                      "src": "867:11:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 655,
+                      "name": "_bidValidity",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 637,
+                      "src": "881:12:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "867:26:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 657,
+                  "nodeType": "ExpressionStatement",
+                  "src": "867:26:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 660,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 658,
+                      "name": "periodOfWork",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 625,
+                      "src": "902:12:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 659,
+                      "name": "_periodOfWork",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 639,
+                      "src": "917:13:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "902:28:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 661,
+                  "nodeType": "ExpressionStatement",
+                  "src": "902:28:7"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 663,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addWorkItemDetails",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 640,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 631,
+                  "name": "_title",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 663,
+                  "src": "571:13:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 630,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "571:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 633,
+                  "name": "_tenderValue",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 663,
+                  "src": "594:20:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 632,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "594:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 635,
+                  "name": "_category",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 663,
+                  "src": "624:16:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 634,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "624:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 637,
+                  "name": "_bidValidity",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 663,
+                  "src": "650:19:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 636,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "650:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 639,
+                  "name": "_periodOfWork",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 663,
+                  "src": "678:20:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 638,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "678:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "561:176:7"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 641,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "770:0:7"
+            },
+            "scope": 664,
+            "src": "534:472:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 665,
+        "src": "308:707:7"
+      }
+    ],
+    "src": "0:1016:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.2",
+  "updatedAt": "2019-06-23T02:31:29.929Z"
+}

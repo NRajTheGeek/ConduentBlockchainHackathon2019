@@ -1,0 +1,97 @@
+{
+  "contractName": "Ballot",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820ccdeffd3bb5c621cab0fbcfb0c8a4399a36c07e0f1bcf1ddc1559c7e4308f9f50029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820ccdeffd3bb5c621cab0fbcfb0c8a4399a36c07e0f1bcf1ddc1559c7e4308f9f50029",
+  "sourceMap": "26:24:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:24:1;;;;;;;",
+  "deployedSourceMap": "26:24:1:-;;;;;",
+  "source": "pragma solidity ^0.4.22;\n\ncontract Ballot {\n    \n}\n",
+  "sourcePath": "/home/dev/Documents/conduentHackathon/truffle/contracts/Ballot.sol",
+  "ast": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon/truffle/contracts/Ballot.sol",
+    "exportedSymbols": {
+      "Ballot": [
+        27
+      ]
+    },
+    "id": 28,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 26,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 27,
+        "linearizedBaseContracts": [
+          27
+        ],
+        "name": "Ballot",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 28,
+        "src": "26:24:1"
+      }
+    ],
+    "src": "0:51:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon/truffle/contracts/Ballot.sol",
+    "exportedSymbols": {
+      "Ballot": [
+        27
+      ]
+    },
+    "id": 28,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 26,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 27,
+        "linearizedBaseContracts": [
+          27
+        ],
+        "name": "Ballot",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 28,
+        "src": "26:24:1"
+      }
+    ],
+    "src": "0:51:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.2",
+  "updatedAt": "2019-06-23T00:48:25.002Z"
+}

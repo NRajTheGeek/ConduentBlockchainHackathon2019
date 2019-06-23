@@ -1,0 +1,93 @@
+[*] Starting Constellation node
+13:56:16 [INFO] Log level is LevelWarn
+13:56:16 [WARN] /home/node/keys/OrganizationChainNode.key is too accessible. Please run: chmod 0600 /home/node/keys/OrganizationChainNode.key
+13:56:16 [WARN] Synchronization failed: HttpExceptionRequest Request {
+  host                 = "192.168.15.240"
+  port                 = 22002
+  secure               = False
+  requestHeaders       = []
+  path                 = "/partyinfo"
+  queryString          = ""
+  method               = "POST"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 23>: does not exist (Connection refused))
+13:56:17 [WARN] Synchronization failed: HttpExceptionRequest Request {
+  host                 = "192.168.15.240"
+  port                 = 22002
+  secure               = False
+  requestHeaders       = []
+  path                 = "/partyinfo"
+  queryString          = ""
+  method               = "POST"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 23>: does not exist (Connection refused))
+13:56:18 [WARN] Synchronization failed: HttpExceptionRequest Request {
+  host                 = "192.168.15.240"
+  port                 = 22002
+  secure               = False
+  requestHeaders       = []
+  path                 = "/partyinfo"
+  queryString          = ""
+  method               = "POST"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 23>: does not exist (Connection refused))
+13:56:19 [WARN] Synchronization failed: HttpExceptionRequest Request {
+  host                 = "192.168.15.240"
+  port                 = 22002
+  secure               = False
+  requestHeaders       = []
+  path                 = "/partyinfo"
+  queryString          = ""
+  method               = "POST"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 23>: does not exist (Connection refused))
+13:56:20 [WARN] Synchronization failed: HttpExceptionRequest Request {
+  host                 = "192.168.15.240"
+  port                 = 22002
+  secure               = False
+  requestHeaders       = []
+  path                 = "/partyinfo"
+  queryString          = ""
+  method               = "POST"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 23>: does not exist (Connection refused))
+13:56:31 [WARN] Synchronization failed: HttpExceptionRequest Request {
+  host                 = "192.168.15.240"
+  port                 = 22002
+  secure               = False
+  requestHeaders       = []
+  path                 = "/partyinfo"
+  queryString          = ""
+  method               = "POST"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 23>: does not exist (Connection refused))

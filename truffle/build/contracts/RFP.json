@@ -1,0 +1,2521 @@
+{
+  "contractName": "RFP",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tenderOpeningDate",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tenderWinnerAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tenderID",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_statusCode",
+          "type": "uint16"
+        }
+      ],
+      "name": "getRFPStatusByStatusCode",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60806040526000805560018055600280556003805534801561002057600080fd5b50600033600860006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555061006c610266565b604051809103906000f080158015610088573d6000803e3d6000fd5b50600e60006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506100d1610276565b604051809103906000f0801580156100ed573d6000803e3d6000fd5b50600f60006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610136610286565b604051809103906000f080158015610152573d6000803e3d6000fd5b50601060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555061019b610296565b604051809103906000f0801580156101b7573d6000803e3d6000fd5b50601160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506102006102a6565b604051809103906000f08015801561021c573d6000803e3d6000fd5b50601260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550309050506102b6565b6040516103a0806106c583390190565b6040516102a180610a6583390190565b60405161033880610d0683390190565b6040516103768061103e83390190565b6040516102f6806113b483390190565b610400806102c56000396000f300608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631255fd5c1461006757806327e2feb7146100a6578063a2d42d2b146100fd578063e6a7116b1461018d575b600080fd5b34801561007357600080fd5b5061007c610237565b604051808267ffffffffffffffff1667ffffffffffffffff16815260200191505060405180910390f35b3480156100b257600080fd5b506100bb610251565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561010957600080fd5b50610112610277565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610152578082015181840152602081019050610137565b50505050905090810190601f16801561017f5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561019957600080fd5b506101bc600480360381019080803561ffff169060200190929190505050610315565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101fc5780820151818401526020810190506101e1565b50505050905090810190601f1680156102295780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b600860149054906101000a900467ffffffffffffffff1681565b600a60009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60098054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561030d5780601f106102e25761010080835404028352916020019161030d565b820191906000526020600020905b8154815290600101906020018083116102f057829003601f168201915b505050505081565b6060600c60006103e861ffff1661ffff1681526020019081526020016000208054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103c85780601f1061039d576101008083540402835291602001916103c8565b820191906000526020600020905b8154815290600101906020018083116103ab57829003601f168201915b505050505090509190505600a165627a7a723058203547a2b5687198413af92d597c0ddf6acae336433bdf82500764fc5e75ebc83c002960806040526000805560018055600280556003805534801561002057600080fd5b50610370806100306000396000f300608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680639b280d7114610046575b600080fd5b34801561005257600080fd5b5061020b600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929050505061020d565b005b856009908051906020019061022392919061029f565b5084600a908051906020019061023a92919061029f565b5083600b908051906020019061025192919061029f565b5082600c908051906020019061026892919061029f565b5081600d908051906020019061027f92919061029f565b5080600e908051906020019061029692919061029f565b50505050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102e057805160ff191683800117855561030e565b8280016001018555821561030e579182015b8281111561030d5782518255916020019190600101906102f2565b5b50905061031b919061031f565b5090565b61034191905b8082111561033d576000816000905550600101610325565b5090565b905600a165627a7a723058207ecab9565d3580a6af014968fc1fb1bb62d1c614d6cb3105d9682e3c7874826d002960806040526000805560018055600280556003805534801561002057600080fd5b50610271806100306000396000f300608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063ae5b63ae14610046575b600080fd5b34801561005257600080fd5b506100f3600480360381019080803567ffffffffffffffff169060200190929190803567ffffffffffffffff169060200190929190803567ffffffffffffffff169060200190929190803567ffffffffffffffff169060200190929190803567ffffffffffffffff169060200190929190803567ffffffffffffffff169060200190929190803567ffffffffffffffff1690602001909291905050506100f5565b005b42600860006101000a81548167ffffffffffffffff021916908367ffffffffffffffff160217905550866008806101000a81548167ffffffffffffffff021916908367ffffffffffffffff16021790555085600860106101000a81548167ffffffffffffffff021916908367ffffffffffffffff16021790555084600860186101000a81548167ffffffffffffffff021916908367ffffffffffffffff16021790555083600960006101000a81548167ffffffffffffffff021916908367ffffffffffffffff16021790555082600960086101000a81548167ffffffffffffffff021916908367ffffffffffffffff16021790555081600960106101000a81548167ffffffffffffffff021916908367ffffffffffffffff16021790555080600960186101000a81548167ffffffffffffffff021916908367ffffffffffffffff160217905550505050505050505600a165627a7a7230582061f13d82c50f2df1b5632eaea9f8eb2e2eeaddf156eeb28bda4ec50bb1183023002960806040526000805560018055600280556003805534801561002057600080fd5b50610308806100306000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635a8243ce14610051578063622ed7ae1461010a575b600080fd5b34801561005d57600080fd5b5061010860048036038101908080359060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192905050506101c3565b005b34801561011657600080fd5b506101c1600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001909291905050506101fd565b005b82600a8190555081600890805190602001906101e0929190610237565b5080600990805190602001906101f7929190610237565b50505050565b82600b9080519060200190610213929190610237565b5081600c908051906020019061022a929190610237565b5080600d81905550505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061027857805160ff19168380011785556102a6565b828001600101855582156102a6579182015b828111156102a557825182559160200191906001019061028a565b5b5090506102b391906102b7565b5090565b6102d991905b808211156102d55760008160009055506001016102bd565b5090565b905600a165627a7a723058202675e474be559c40ff4b7518f1886f7c476b2be414f28228b816d255b951efff002960806040526000805560018055600280556003805534801561002057600080fd5b50610346806100306000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063448309e414610051578063da41405814610120575b600080fd5b34801561005d57600080fd5b5061011e600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192905050506101cf565b005b34801561012c57600080fd5b506101cd600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290505050610243565b005b82600a60006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555081600b9080519060200190610226929190610275565b5080600c908051906020019061023d929190610275565b50505050565b8160089080519060200190610259929190610275565b508060099080519060200190610270929190610275565b505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102b657805160ff19168380011785556102e4565b828001600101855582156102e4579182015b828111156102e35782518255916020019190600101906102c8565b5b5090506102f191906102f5565b5090565b61031791905b808211156103135760008160009055506001016102fb565b5090565b905600a165627a7a7230582021614658f7a2ce33231117dfb48bc2dabac351bbd5e4123196fa17da3e4ff244002960806040526000805560018055600280556003805534801561002057600080fd5b506102c6806100306000396000f300608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063fcd57bd014610046575b600080fd5b34801561005257600080fd5b50610189600480360381019080803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929080359060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929050505061018b565b005b84600890805190602001906101a19291906101f5565b508360098190555082600a90805190602001906101bf9291906101f5565b5081600b90805190602001906101d69291906101f5565b5080600c90805190602001906101ed9291906101f5565b505050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061023657805160ff1916838001178555610264565b82800160010185558215610264579182015b82811115610263578251825591602001919060010190610248565b5b5090506102719190610275565b5090565b61029791905b8082111561029357600081600090555060010161027b565b5090565b905600a165627a7a72305820b791e641b1d2ad9ca25a79e4a3a5249777cec70a5513ee1758bbaa2a0cd126e50029",
+  "deployedBytecode": "0x608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631255fd5c1461006757806327e2feb7146100a6578063a2d42d2b146100fd578063e6a7116b1461018d575b600080fd5b34801561007357600080fd5b5061007c610237565b604051808267ffffffffffffffff1667ffffffffffffffff16815260200191505060405180910390f35b3480156100b257600080fd5b506100bb610251565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561010957600080fd5b50610112610277565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610152578082015181840152602081019050610137565b50505050905090810190601f16801561017f5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561019957600080fd5b506101bc600480360381019080803561ffff169060200190929190505050610315565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101fc5780820151818401526020810190506101e1565b50505050905090810190601f1680156102295780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b600860149054906101000a900467ffffffffffffffff1681565b600a60009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60098054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561030d5780601f106102e25761010080835404028352916020019161030d565b820191906000526020600020905b8154815290600101906020018083116102f057829003601f168201915b505050505081565b6060600c60006103e861ffff1661ffff1681526020019081526020016000208054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103c85780601f1061039d576101008083540402835291602001916103c8565b820191906000526020600020905b8154815290600101906020018083116103ab57829003601f168201915b505050505090509190505600a165627a7a723058203547a2b5687198413af92d597c0ddf6acae336433bdf82500764fc5e75ebc83c0029",
+  "sourceMap": "660:11118:3:-;;;2450:1:10;2433:18;;2474:1;2458:17;;2499:1;2482:18;;2524:1;2507:18;;7097:869:3;8:9:-1;5:2;;;30:1;27;20:12;5:2;7097:869:3;7576:13;7138:10;7130:5;;:18;;;;;;;;;;;;;;;;;;7172:14;;:::i;:::-;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;7172:14:3;7161:8;;:25;;;;;;;;;;;;;;;;;;7215:22;;:::i;:::-;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;7215:22:3;7197:15;;:40;;;;;;;;;;;;;;;;;;7453:16;;:::i;:::-;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;7453:16:3;7440:10;;:29;;;;;;;;;;;;;;;;;;7499:22;;:::i;:::-;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;7499:22:3;7480:16;;:41;;;;;;;;;;;;;;;;;;7546:17;;:::i;:::-;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;7546:17:3;7532:11;;:31;;;;;;;;;;;;;;;;;;7599:4;7576:28;;7097:869;660:11118;;;;;;;;;;;;:::o;:::-;;;;;;;;;;:::o;:::-;;;;;;;;;;:::o;:::-;;;;;;;;;;:::o;:::-;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "660:11118:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2408:31;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2408:31:3;;;;;;;;;;;;;;;;;;;;;;;;;;;2475:34;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2475:34:3;;;;;;;;;;;;;;;;;;;;;;;;;;;2446:22;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2446:22:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;2446:22:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;10287:157;;8:9:-1;5:2;;;30:1;27;20:12;5:2;10287:157:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;10287:157:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2408:31;;;;;;;;;;;;;:::o;2475:34::-;;;;;;;;;;;;;:::o;2446:22::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;10287:157::-;10377:6;10408:16;:28;1713:4:10;10408:28:3;;;;;;;;;;;;;;;10401:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;10287:157;;;:::o",
+  "source": "pragma solidity ^0.4.22;\r\n\r\n/* Author: Neeraj Kumar\r\n * \r\n * Being a public contract: This will host the following features:\r\n *  - launching the RFP\r\n *  - start and end date of accepting application (bids) \r\n *  - disclosure of bids only after the dead line of bidding is over  \r\n *  - \r\n*/\r\n\r\n// import \"./Ballot.sol\";\r\nimport \"./Utils.sol\";\r\nimport \"./Bidder.sol\";\r\nimport \"./RFPBasic.sol\";\r\nimport \"./RFPEMD_Fee.sol\";\r\nimport \"./RFP_TDoc_InvAuth.sol\";\r\n// import \"./RFPEMD.sol\";\r\n// import \"./RFPFeeDetails.sol\";\r\n// import \"./RFPTenderDoc.sol\";\r\nimport \"./RFPCriticalDate.sol\";\r\nimport \"./RFPWorkItem.sol\";\r\n\r\n//TODO: Total RFP in formation is public\r\n\r\ncontract RFP is Utils {\r\n\r\n    // Ballot ballot;\r\n    \r\n    // important to keep the owner private\r\n    address private owner;\r\n\r\n\r\n    // struct BasicDetails {\r\n    //     string orgChain;\r\n    //     string tenderRefNumber;\r\n    //     string tenderID;\r\n    //     string RefId;\r\n    //     string catagory;\r\n    //     string paymentMode;\r\n    //     string tenderType;\r\n    //     // bool state;\r\n    // }\r\n\r\n    // struct FeeDetails {\r\n    //     string feePayableTo;\r\n    //     string feePayableAt;\r\n    //     uint payableFee;\r\n    //     // bool state;\r\n    // }\r\n\r\n    // struct EMDDetails {\r\n    //     uint amount;\r\n    //     string payableTo;\r\n    //     string payableAt;\r\n    //     // bool state;\r\n    // }\r\n\r\n    // struct WorkItemDetails {\r\n    //     string title;\r\n    //     uint tenderValue;\r\n    //     string category;\r\n    //     string bidValidity;\r\n    //     string periodOfWork;\r\n    //     string workDescription;\r\n    //     // bool state;\r\n    // }\r\n\r\n    // struct CriticalDates {\r\n        \r\n    //     uint64 publishedDate;\r\n    //     uint64 bidOpeningdate;\r\n\r\n    //     uint64 bidRevealStartDate;\r\n    //     uint64 bidRevealEndDate;\r\n    //     uint64 votingStartDate;\r\n    //     uint64 votingEndDate;\r\n    //     // uint64 bidSubmissionStartDate;\r\n    //     uint64 bidSubmissionEndDate;\r\n    //     uint64 bidOpeningDate;\r\n    //     // uint64 uintclarificationDate;\r\n    //     // bool state;\r\n    // }\r\n\r\n    // struct TenderDoc {\r\n    //     string docCID;\r\n    //     string DocHash;\r\n    //     // bool state;\r\n    // }\r\n\r\n    // struct TenderInvitingAuth {\r\n    //     address authAddress;\r\n    //     string name;\r\n    //     string Address;\r\n    //     // bool state;\r\n    // }\r\n\r\n    //TODO:\r\n    uint64 public tenderOpeningDate;\r\n    string public tenderID;\r\n    address public tenderWinnerAddress;\r\n\r\n    // bool RFPStatus;\r\n    uint bidCount;\r\n    \r\n    mapping(uint16 => string) RFPStatusStrings;\r\n    // bidder address => bid id => \r\n    mapping(address => string) bidByAddressOfBidder;\r\n\r\n    // mapping(uint16 => string) BidStatusString;\r\n    // mapping (string => Bid) bidsByBidId;\r\n    \r\n\r\n    // // contract storage\r\n    // BasicDetails basicDetails;\r\n    // FeeDetails feeDetails;\r\n    // EMDDetails eMDDetails;\r\n    // WorkItemDetails workItemDetails;\r\n    // CriticalDates criticalDates;\r\n    // TenderDoc tenderDoc;\r\n    // TenderInvitingAuth tenderInvitingAuth;\r\n\r\n    //-----------------------------------------------------------------------------------------\r\n\r\n\r\n    //-----------------------------------------------------------------------------------------\r\n    // function setRFPBasicDetails(\r\n    //     string _orgChain,\r\n    //     string _tenderRefNumber,\r\n    //     string _tenderID,\r\n    //     string _RefId,\r\n    //     string _catagory,\r\n    //     string _paymentMode,\r\n    //     string _tenderType\r\n    // ) \r\n    // // modifier: should be allowed to only owner\r\n    // {\r\n    //     basicDetails = BasicDetails(\r\n    //         _orgChain,\r\n    //         _tenderRefNumber,\r\n    //         _tenderID,\r\n    //         _RefId,\r\n    //         _catagory,\r\n    //         _paymentMode,\r\n    //         _tenderType\r\n    //         // true\r\n    //     );\r\n    // }\r\n\r\n\r\n    // function addFeeDetails(\r\n    //     string _feePayableTo,\r\n    //     string _feePayableAt,\r\n    //     uint _payableFee\r\n    // )\r\n    // public \r\n    // //modifier\r\n    // {\r\n    //     feeDetails = FeeDetails(\r\n    //         _feePayableTo,\r\n    //         _feePayableAt,\r\n    //         _payableFee\r\n    //         // true\r\n    //     );\r\n    // }\r\n\r\n    // function addEMDDetails(\r\n    //     uint    _amount,\r\n    //     string _payableTo,\r\n    //     string memory  _payableAt\r\n    // )\r\n    // public \r\n    // // modifier\r\n    // {\r\n    //     eMDDetails = EMDDetails(\r\n    //         _amount,\r\n    //         _payableTo,\r\n    //         _payableAt\r\n    //         // true\r\n    //     );\r\n    // }\r\n\r\n    // function addWorkItemDetails(\r\n    //     string _title,\r\n    //     uint    _tenderValue,\r\n    //     string _category,\r\n    //     string _bidValidity,\r\n    //     string _periodOfWork,\r\n    //     string _workDescription\r\n    // ) \r\n    // public \r\n    // //modifier\r\n    // {\r\n    //     workItemDetails = WorkItemDetails(\r\n    //         _title,\r\n    //         _tenderValue,\r\n    //         _category,\r\n    //         _bidValidity,\r\n    //         _periodOfWork,\r\n    //         _workDescription\r\n    //         // true\r\n    //     );\r\n    // }\r\n\r\n    // function addCriticaldate(\r\n    //     uint64 _bidOpeningdate,\r\n\r\n    //     uint64 _bidRevealStartDate,\r\n    //     uint64 _bidRevealEndDate,\r\n    //     uint64 _votingStartDate,\r\n    //     uint64 _votingEndDate,\r\n    //     // uint64 _bidSubmissionStartDate,\r\n    //     uint64 _bidSubmissionEndDate,\r\n    //     uint64 _bidOpeningDate\r\n    //     // uint64 _uintclarificationDate\r\n    //     // bool status\r\n    // )\r\n    // public\r\n    // // modfier: check the owner\r\n    // {\r\n    //     criticalDates = CriticalDates(\r\n    //         uint64(now),\r\n    //         _bidOpeningdate,\r\n            \r\n    //         _bidRevealStartDate,\r\n    //         _bidRevealEndDate,\r\n    //         _votingStartDate,\r\n    //         _votingEndDate,\r\n    //         //_bidSubmissionStartDate,\r\n    //         _bidSubmissionEndDate,\r\n    //         _bidOpeningDate\r\n    //         // _uintclarificationDate,\r\n    //         // true\r\n    //     );\r\n    // }\r\n\r\n  \r\n    // function addTenderDoc(\r\n    //     string _docCID,\r\n    //     string _DocHash\r\n    // ) {\r\n    //     tenderDoc = TenderDoc(\r\n    //         _docCID,\r\n    //         _DocHash\r\n    //         // true\r\n    //     );\r\n    // }\r\n\r\n\r\n    // function addTenderInvitingAuth(\r\n    //     address _authAddress,\r\n    //     string _name,\r\n    //     string _Address\r\n    // ) {\r\n    //     tenderInvitingAuth = TenderInvitingAuth(\r\n    //         _authAddress,\r\n    //         _name,\r\n    //         _Address\r\n    //         // true\r\n    //     );\r\n    // }\r\n    RFPBasic rFPBasic;\r\n    RFPCriticalDate rFPCriticalDate;\r\n    // RFPEMD rFPEMD;\r\n    // RFPFeeDetails rFPFeeDetails;\r\n    // RFPTenderDoc rFPTenderDoc;\r\n    // RFPTenderInviteAuth rFPTenderInviteAuth;\r\n    RFPEMD_Fee rFPEMD_Fee;\r\n    RFP_TDoc_InvAuth rFP_TDoc_InvAuth;\r\n    RFPWorkItem rFPWorkItem;\r\n\r\n    // RFP document needs to be uploaded ad openly public and CID should be put there\r\n    constructor () public {\r\n        owner = msg.sender;\r\n\r\n        rFPBasic = new RFPBasic();\r\n        rFPCriticalDate = new  RFPCriticalDate();\r\n        // rFPEMD = new RFPEMD();\r\n        // rFPFeeDetails = new RFPFeeDetails();\r\n        // rFPTenderDoc = new RFPTenderDoc();\r\n        // rFPTenderInviteAuth = new RFPTenderInviteAuth();\r\n        rFPEMD_Fee = new RFPEMD_Fee();\r\n        rFP_TDoc_InvAuth = new RFP_TDoc_InvAuth();\r\n        rFPWorkItem = new RFPWorkItem();\r\n\r\n        Bidder bidder = Bidder(this);\r\n        // RFPStatusStrings[RFP_ACTIVE]         = \"ACTIVE\";\r\n        // RFPStatusStrings[RFP_INACTIVE]       = \"INACTIVE\";\r\n        // RFPStatusStrings[RFP_STALLED]        = \"STALLED\";\r\n        // RFPStatusStrings[RFP_NOT_READY]      = \"NOT READY\";\r\n        // RFPStatusStrings[RFP_TENDER_AWARDED] = \"TENDER AWARDED\";\r\n\r\n        // RFPStatus = false;\r\n\r\n    }\r\n\r\n    // struct Bid {\r\n    //     address bidder;\r\n    //     // only should be put back here after the bid deadline crossed\r\n    //     uint bidPrice;\r\n\r\n    //     string bidID;\r\n    //     uint64 RFPBidLastDate;\r\n\r\n    //     uint64 propsedCompletionDate;\r\n    //     string c1_DocHash;\r\n    //     string c1_CID;\r\n    //     string c1_CID_Shared;\r\n    //     string t1_DocsHash;\r\n    //     string t1_CID;\r\n    //     string t1_CID_Shared;\r\n\r\n    //     uint16 BidStatus;\r\n    // }\r\n\r\n    // function bidForRFP(\r\n    //     // string bidPriceHASH,\r\n\r\n    //     string bidID,\r\n\r\n    //     uint64 propsedCompletionDate,\r\n    //     string memory c1_DocHash,\r\n    //     string memory t1_DocsHash\r\n    // )\r\n    // public\r\n    // // modifier: all input data should be valid\r\n    // // modifier: only if the RFP is ACTIVE state\r\n    // // modifier: only if the bidder's KYC in accepted\r\n    // {\r\n    //     Bid memory bid;\r\n\r\n    //     bid.bidder = msg.sender;\r\n    //     bid.bidID = bidID;\r\n    //     bid.propsedCompletionDate = propsedCompletionDate;\r\n    //     bid.c1_DocHash = c1_DocHash;\r\n    //     bid.t1_DocsHash = t1_DocsHash;\r\n\r\n    //     bid.BidStatus=PLACED_NOT_DECLARED;\r\n        \r\n    //     bidCount++;\r\n\r\n    //     bidsByBidId[bid.bidID] = bid;\r\n    // }\r\n\r\n    // function declareBidPriceAnd_C1T1(\r\n    //     string bidID,\r\n    //     uint _bidPrice,\r\n    //     string _c1CID, \r\n    //     string _c1CID_Shared,\r\n    //     string _t1CID,\r\n    //     string _t1CID_Shared\r\n    // )\r\n    // public\r\n    // // modifier: check the bidId belongs to same account\r\n    // // modifier: check the sanity of all input\r\n    // // modifier: check that the bid end date is over\r\n    // {\r\n    //     bidsByBidId[bidID].bidPrice  = _bidPrice;\r\n    //     bidsByBidId[bidID].c1_CID= _c1CID;\r\n    //     bidsByBidId[bidID].c1_CID_Shared = _c1CID_Shared;\r\n\r\n    //     bidsByBidId[bidID].t1_CID = _t1CID;\r\n    //     bidsByBidId[bidID].t1_CID_Shared = _t1CID_Shared;\r\n    //     bidsByBidId[bidID].BidStatus=PLACED_AND_DECLARED;\r\n    // }\r\n\r\n\r\n    // function setBallot(address _ballotAddress) \r\n    // public\r\n    // // modifier: check first that this address valid and not null\r\n    // // modifier: only owner has this functionality\r\n    // {\r\n    //     ballot = Ballot(_ballotAddress);\r\n    // }\r\n\r\n    function getRFPStatusByStatusCode(uint16 _statusCode)\r\n    public\r\n    view\r\n    returns (string)\r\n    {\r\n        return RFPStatusStrings[RFP_ACTIVE];\r\n    }\r\n\r\n    // function activateRFPForBid()\r\n    // public\r\n    // // modifier: check whether or not invoked by the owner only\r\n    // {\r\n    //     // if(\r\n    //     //     basicDetails.state &&\r\n    //     //     feeDetails.state &&\r\n    //     //     eMDDetails.state &&\r\n    //     //     workItemDetails.state &&\r\n    //     //     criticalDates.state &&\r\n    //     //     tenderDoc.state \r\n    //     // )\r\n    //     RFPStatus = true;\r\n    // }\r\n\r\n    // function getBidByBidID(string _bidID)\r\n    // public\r\n    // // modifier: check invalid ids\r\n    // returns (\r\n    //     address,\r\n    //     uint,\r\n\r\n    //     string,\r\n    //     uint64,\r\n\r\n    //     uint64,\r\n    //     string,\r\n    //     string,\r\n    //     string,\r\n    //     string,\r\n    //     string,\r\n    //     string,\r\n    //     uint16\r\n    // )\r\n    // {\r\n    //     Bid memory _bid = bidsByBidId[_bidID];\r\n    //     return (\r\n    //         _bid.bidder,\r\n    //         _bid.bidPrice,\r\n\r\n    //         _bid.bidID,\r\n    //         _bid.RFPBidLastDate,\r\n\r\n    //         _bid.propsedCompletionDate,\r\n    //         _bid.c1_DocHash,\r\n    //         _bid.c1_CID,\r\n    //         _bid.c1_CID_Shared,\r\n    //         _bid.t1_DocsHash,\r\n    //         _bid.t1_CID,\r\n    //         _bid.t1_CID_Shared,\r\n\r\n    //         _bid.BidStatus\r\n    //     );\r\n    // }\r\n}",
+  "sourcePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFP.sol",
+  "ast": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFP.sol",
+    "exportedSymbols": {
+      "RFP": [
+        402
+      ]
+    },
+    "id": 403,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 307,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Utils.sol",
+        "file": "./Utils.sol",
+        "id": 308,
+        "nodeType": "ImportDirective",
+        "scope": 403,
+        "sourceUnit": 1234,
+        "src": "323:21:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Bidder.sol",
+        "file": "./Bidder.sol",
+        "id": 309,
+        "nodeType": "ImportDirective",
+        "scope": 403,
+        "sourceUnit": 306,
+        "src": "346:22:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPBasic.sol",
+        "file": "./RFPBasic.sol",
+        "id": 310,
+        "nodeType": "ImportDirective",
+        "scope": 403,
+        "sourceUnit": 467,
+        "src": "370:24:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPEMD_Fee.sol",
+        "file": "./RFPEMD_Fee.sol",
+        "id": 311,
+        "nodeType": "ImportDirective",
+        "scope": 403,
+        "sourceUnit": 611,
+        "src": "396:26:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFP_TDoc_InvAuth.sol",
+        "file": "./RFP_TDoc_InvAuth.sol",
+        "id": 312,
+        "nodeType": "ImportDirective",
+        "scope": 403,
+        "sourceUnit": 719,
+        "src": "424:32:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPCriticalDate.sol",
+        "file": "./RFPCriticalDate.sol",
+        "id": 313,
+        "nodeType": "ImportDirective",
+        "scope": 403,
+        "sourceUnit": 545,
+        "src": "552:31:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPWorkItem.sol",
+        "file": "./RFPWorkItem.sol",
+        "id": 314,
+        "nodeType": "ImportDirective",
+        "scope": 403,
+        "sourceUnit": 665,
+        "src": "585:27:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 315,
+              "name": "Utils",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1233,
+              "src": "676:5:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Utils_$1233",
+                "typeString": "contract Utils"
+              }
+            },
+            "id": 316,
+            "nodeType": "InheritanceSpecifier",
+            "src": "676:5:3"
+          }
+        ],
+        "contractDependencies": [
+          466,
+          544,
+          610,
+          664,
+          718,
+          862,
+          878,
+          885,
+          904,
+          911,
+          927,
+          937,
+          1233
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 402,
+        "linearizedBaseContracts": [
+          402,
+          1233,
+          937,
+          927,
+          911,
+          904,
+          885,
+          878,
+          862
+        ],
+        "name": "RFP",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 318,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "764:21:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 317,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "764:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 320,
+            "name": "tenderOpeningDate",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "2408:31:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint64",
+              "typeString": "uint64"
+            },
+            "typeName": {
+              "id": 319,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "2408:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 322,
+            "name": "tenderID",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "2446:22:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 321,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "2446:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 324,
+            "name": "tenderWinnerAddress",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "2475:34:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 323,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "2475:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 326,
+            "name": "bidCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "2542:13:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 325,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "2542:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 330,
+            "name": "RFPStatusStrings",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "2568:42:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint16_$_t_string_storage_$",
+              "typeString": "mapping(uint16 => string)"
+            },
+            "typeName": {
+              "id": 329,
+              "keyType": {
+                "id": 327,
+                "name": "uint16",
+                "nodeType": "ElementaryTypeName",
+                "src": "2576:6:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint16",
+                  "typeString": "uint16"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "2568:25:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint16_$_t_string_storage_$",
+                "typeString": "mapping(uint16 => string)"
+              },
+              "valueType": {
+                "id": 328,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "2586:6:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 334,
+            "name": "bidByAddressOfBidder",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "2654:47:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_string_storage_$",
+              "typeString": "mapping(address => string)"
+            },
+            "typeName": {
+              "id": 333,
+              "keyType": {
+                "id": 331,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "2662:7:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "2654:26:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_string_storage_$",
+                "typeString": "mapping(address => string)"
+              },
+              "valueType": {
+                "id": 332,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "2673:6:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 336,
+            "name": "rFPBasic",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "6704:17:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_RFPBasic_$466",
+              "typeString": "contract RFPBasic"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 335,
+              "name": "RFPBasic",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 466,
+              "src": "6704:8:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RFPBasic_$466",
+                "typeString": "contract RFPBasic"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 338,
+            "name": "rFPCriticalDate",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "6728:31:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_RFPCriticalDate_$544",
+              "typeString": "contract RFPCriticalDate"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 337,
+              "name": "RFPCriticalDate",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 544,
+              "src": "6728:15:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RFPCriticalDate_$544",
+                "typeString": "contract RFPCriticalDate"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 340,
+            "name": "rFPEMD_Fee",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "6910:21:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_RFPEMD_Fee_$610",
+              "typeString": "contract RFPEMD_Fee"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 339,
+              "name": "RFPEMD_Fee",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 610,
+              "src": "6910:10:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RFPEMD_Fee_$610",
+                "typeString": "contract RFPEMD_Fee"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 342,
+            "name": "rFP_TDoc_InvAuth",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "6938:33:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_RFP_TDoc_InvAuth_$718",
+              "typeString": "contract RFP_TDoc_InvAuth"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 341,
+              "name": "RFP_TDoc_InvAuth",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 718,
+              "src": "6938:16:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RFP_TDoc_InvAuth_$718",
+                "typeString": "contract RFP_TDoc_InvAuth"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 344,
+            "name": "rFPWorkItem",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "6978:23:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_RFPWorkItem_$664",
+              "typeString": "contract RFPWorkItem"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 343,
+              "name": "RFPWorkItem",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 664,
+              "src": "6978:11:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RFPWorkItem_$664",
+                "typeString": "contract RFPWorkItem"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 388,
+              "nodeType": "Block",
+              "src": "7119:847:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 350,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 347,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 318,
+                      "src": "7130:5:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 348,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1248,
+                        "src": "7138:3:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 349,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "7138:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "7130:18:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 351,
+                  "nodeType": "ExpressionStatement",
+                  "src": "7130:18:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 356,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 352,
+                      "name": "rFPBasic",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 336,
+                      "src": "7161:8:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPBasic_$466",
+                        "typeString": "contract RFPBasic"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 354,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "7172:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_RFPBasic_$466_$",
+                          "typeString": "function () returns (contract RFPBasic)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 353,
+                          "name": "RFPBasic",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 466,
+                          "src": "7176:8:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_RFPBasic_$466",
+                            "typeString": "contract RFPBasic"
+                          }
+                        }
+                      },
+                      "id": 355,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "7172:14:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPBasic_$466",
+                        "typeString": "contract RFPBasic"
+                      }
+                    },
+                    "src": "7161:25:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_RFPBasic_$466",
+                      "typeString": "contract RFPBasic"
+                    }
+                  },
+                  "id": 357,
+                  "nodeType": "ExpressionStatement",
+                  "src": "7161:25:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 362,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 358,
+                      "name": "rFPCriticalDate",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 338,
+                      "src": "7197:15:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPCriticalDate_$544",
+                        "typeString": "contract RFPCriticalDate"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 360,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "7215:20:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_RFPCriticalDate_$544_$",
+                          "typeString": "function () returns (contract RFPCriticalDate)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 359,
+                          "name": "RFPCriticalDate",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 544,
+                          "src": "7220:15:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_RFPCriticalDate_$544",
+                            "typeString": "contract RFPCriticalDate"
+                          }
+                        }
+                      },
+                      "id": 361,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "7215:22:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPCriticalDate_$544",
+                        "typeString": "contract RFPCriticalDate"
+                      }
+                    },
+                    "src": "7197:40:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_RFPCriticalDate_$544",
+                      "typeString": "contract RFPCriticalDate"
+                    }
+                  },
+                  "id": 363,
+                  "nodeType": "ExpressionStatement",
+                  "src": "7197:40:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 368,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 364,
+                      "name": "rFPEMD_Fee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 340,
+                      "src": "7440:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPEMD_Fee_$610",
+                        "typeString": "contract RFPEMD_Fee"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 366,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "7453:14:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_RFPEMD_Fee_$610_$",
+                          "typeString": "function () returns (contract RFPEMD_Fee)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 365,
+                          "name": "RFPEMD_Fee",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 610,
+                          "src": "7457:10:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_RFPEMD_Fee_$610",
+                            "typeString": "contract RFPEMD_Fee"
+                          }
+                        }
+                      },
+                      "id": 367,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "7453:16:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPEMD_Fee_$610",
+                        "typeString": "contract RFPEMD_Fee"
+                      }
+                    },
+                    "src": "7440:29:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_RFPEMD_Fee_$610",
+                      "typeString": "contract RFPEMD_Fee"
+                    }
+                  },
+                  "id": 369,
+                  "nodeType": "ExpressionStatement",
+                  "src": "7440:29:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 374,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 370,
+                      "name": "rFP_TDoc_InvAuth",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 342,
+                      "src": "7480:16:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFP_TDoc_InvAuth_$718",
+                        "typeString": "contract RFP_TDoc_InvAuth"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 372,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "7499:20:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_RFP_TDoc_InvAuth_$718_$",
+                          "typeString": "function () returns (contract RFP_TDoc_InvAuth)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 371,
+                          "name": "RFP_TDoc_InvAuth",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 718,
+                          "src": "7503:16:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_RFP_TDoc_InvAuth_$718",
+                            "typeString": "contract RFP_TDoc_InvAuth"
+                          }
+                        }
+                      },
+                      "id": 373,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "7499:22:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFP_TDoc_InvAuth_$718",
+                        "typeString": "contract RFP_TDoc_InvAuth"
+                      }
+                    },
+                    "src": "7480:41:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_RFP_TDoc_InvAuth_$718",
+                      "typeString": "contract RFP_TDoc_InvAuth"
+                    }
+                  },
+                  "id": 375,
+                  "nodeType": "ExpressionStatement",
+                  "src": "7480:41:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 380,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 376,
+                      "name": "rFPWorkItem",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 344,
+                      "src": "7532:11:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPWorkItem_$664",
+                        "typeString": "contract RFPWorkItem"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 378,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "7546:15:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_RFPWorkItem_$664_$",
+                          "typeString": "function () returns (contract RFPWorkItem)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 377,
+                          "name": "RFPWorkItem",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 664,
+                          "src": "7550:11:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_RFPWorkItem_$664",
+                            "typeString": "contract RFPWorkItem"
+                          }
+                        }
+                      },
+                      "id": 379,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "7546:17:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPWorkItem_$664",
+                        "typeString": "contract RFPWorkItem"
+                      }
+                    },
+                    "src": "7532:31:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_RFPWorkItem_$664",
+                      "typeString": "contract RFPWorkItem"
+                    }
+                  },
+                  "id": 381,
+                  "nodeType": "ExpressionStatement",
+                  "src": "7532:31:3"
+                },
+                {
+                  "assignments": [
+                    383
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 383,
+                      "name": "bidder",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 389,
+                      "src": "7576:13:3",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Bidder_$305",
+                        "typeString": "contract Bidder"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 382,
+                        "name": "Bidder",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 305,
+                        "src": "7576:6:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Bidder_$305",
+                          "typeString": "contract Bidder"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 387,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 385,
+                        "name": "this",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1289,
+                        "src": "7599:4:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_RFP_$402",
+                          "typeString": "contract RFP"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_RFP_$402",
+                          "typeString": "contract RFP"
+                        }
+                      ],
+                      "id": 384,
+                      "name": "Bidder",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 305,
+                      "src": "7592:6:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_contract$_Bidder_$305_$",
+                        "typeString": "type(contract Bidder)"
+                      }
+                    },
+                    "id": 386,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "7592:12:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Bidder_$305",
+                      "typeString": "contract Bidder"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "7576:28:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 389,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 345,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "7109:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 346,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "7119:0:3"
+            },
+            "scope": 402,
+            "src": "7097:869:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 400,
+              "nodeType": "Block",
+              "src": "10390:54:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 396,
+                      "name": "RFPStatusStrings",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 330,
+                      "src": "10408:16:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint16_$_t_string_storage_$",
+                        "typeString": "mapping(uint16 => string storage ref)"
+                      }
+                    },
+                    "id": 398,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 397,
+                      "name": "RFP_ACTIVE",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 914,
+                      "src": "10425:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint16",
+                        "typeString": "uint16"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "10408:28:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 395,
+                  "id": 399,
+                  "nodeType": "Return",
+                  "src": "10401:35:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 401,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getRFPStatusByStatusCode",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 392,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 391,
+                  "name": "_statusCode",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 401,
+                  "src": "10321:18:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 390,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "10321:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "10320:20:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 395,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 394,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 401,
+                  "src": "10377:6:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 393,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "10377:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "10376:8:3"
+            },
+            "scope": 402,
+            "src": "10287:157:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 403,
+        "src": "660:11118:3"
+      }
+    ],
+    "src": "0:11778:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFP.sol",
+    "exportedSymbols": {
+      "RFP": [
+        402
+      ]
+    },
+    "id": 403,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 307,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Utils.sol",
+        "file": "./Utils.sol",
+        "id": 308,
+        "nodeType": "ImportDirective",
+        "scope": 403,
+        "sourceUnit": 1234,
+        "src": "323:21:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Bidder.sol",
+        "file": "./Bidder.sol",
+        "id": 309,
+        "nodeType": "ImportDirective",
+        "scope": 403,
+        "sourceUnit": 306,
+        "src": "346:22:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPBasic.sol",
+        "file": "./RFPBasic.sol",
+        "id": 310,
+        "nodeType": "ImportDirective",
+        "scope": 403,
+        "sourceUnit": 467,
+        "src": "370:24:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPEMD_Fee.sol",
+        "file": "./RFPEMD_Fee.sol",
+        "id": 311,
+        "nodeType": "ImportDirective",
+        "scope": 403,
+        "sourceUnit": 611,
+        "src": "396:26:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFP_TDoc_InvAuth.sol",
+        "file": "./RFP_TDoc_InvAuth.sol",
+        "id": 312,
+        "nodeType": "ImportDirective",
+        "scope": 403,
+        "sourceUnit": 719,
+        "src": "424:32:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPCriticalDate.sol",
+        "file": "./RFPCriticalDate.sol",
+        "id": 313,
+        "nodeType": "ImportDirective",
+        "scope": 403,
+        "sourceUnit": 545,
+        "src": "552:31:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPWorkItem.sol",
+        "file": "./RFPWorkItem.sol",
+        "id": 314,
+        "nodeType": "ImportDirective",
+        "scope": 403,
+        "sourceUnit": 665,
+        "src": "585:27:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 315,
+              "name": "Utils",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1233,
+              "src": "676:5:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Utils_$1233",
+                "typeString": "contract Utils"
+              }
+            },
+            "id": 316,
+            "nodeType": "InheritanceSpecifier",
+            "src": "676:5:3"
+          }
+        ],
+        "contractDependencies": [
+          466,
+          544,
+          610,
+          664,
+          718,
+          862,
+          878,
+          885,
+          904,
+          911,
+          927,
+          937,
+          1233
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 402,
+        "linearizedBaseContracts": [
+          402,
+          1233,
+          937,
+          927,
+          911,
+          904,
+          885,
+          878,
+          862
+        ],
+        "name": "RFP",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 318,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "764:21:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 317,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "764:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 320,
+            "name": "tenderOpeningDate",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "2408:31:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint64",
+              "typeString": "uint64"
+            },
+            "typeName": {
+              "id": 319,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "2408:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 322,
+            "name": "tenderID",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "2446:22:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 321,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "2446:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 324,
+            "name": "tenderWinnerAddress",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "2475:34:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 323,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "2475:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 326,
+            "name": "bidCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "2542:13:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 325,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "2542:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 330,
+            "name": "RFPStatusStrings",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "2568:42:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint16_$_t_string_storage_$",
+              "typeString": "mapping(uint16 => string)"
+            },
+            "typeName": {
+              "id": 329,
+              "keyType": {
+                "id": 327,
+                "name": "uint16",
+                "nodeType": "ElementaryTypeName",
+                "src": "2576:6:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint16",
+                  "typeString": "uint16"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "2568:25:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint16_$_t_string_storage_$",
+                "typeString": "mapping(uint16 => string)"
+              },
+              "valueType": {
+                "id": 328,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "2586:6:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 334,
+            "name": "bidByAddressOfBidder",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "2654:47:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_string_storage_$",
+              "typeString": "mapping(address => string)"
+            },
+            "typeName": {
+              "id": 333,
+              "keyType": {
+                "id": 331,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "2662:7:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "2654:26:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_string_storage_$",
+                "typeString": "mapping(address => string)"
+              },
+              "valueType": {
+                "id": 332,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "2673:6:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 336,
+            "name": "rFPBasic",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "6704:17:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_RFPBasic_$466",
+              "typeString": "contract RFPBasic"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 335,
+              "name": "RFPBasic",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 466,
+              "src": "6704:8:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RFPBasic_$466",
+                "typeString": "contract RFPBasic"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 338,
+            "name": "rFPCriticalDate",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "6728:31:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_RFPCriticalDate_$544",
+              "typeString": "contract RFPCriticalDate"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 337,
+              "name": "RFPCriticalDate",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 544,
+              "src": "6728:15:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RFPCriticalDate_$544",
+                "typeString": "contract RFPCriticalDate"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 340,
+            "name": "rFPEMD_Fee",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "6910:21:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_RFPEMD_Fee_$610",
+              "typeString": "contract RFPEMD_Fee"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 339,
+              "name": "RFPEMD_Fee",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 610,
+              "src": "6910:10:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RFPEMD_Fee_$610",
+                "typeString": "contract RFPEMD_Fee"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 342,
+            "name": "rFP_TDoc_InvAuth",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "6938:33:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_RFP_TDoc_InvAuth_$718",
+              "typeString": "contract RFP_TDoc_InvAuth"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 341,
+              "name": "RFP_TDoc_InvAuth",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 718,
+              "src": "6938:16:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RFP_TDoc_InvAuth_$718",
+                "typeString": "contract RFP_TDoc_InvAuth"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 344,
+            "name": "rFPWorkItem",
+            "nodeType": "VariableDeclaration",
+            "scope": 402,
+            "src": "6978:23:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_RFPWorkItem_$664",
+              "typeString": "contract RFPWorkItem"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 343,
+              "name": "RFPWorkItem",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 664,
+              "src": "6978:11:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RFPWorkItem_$664",
+                "typeString": "contract RFPWorkItem"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 388,
+              "nodeType": "Block",
+              "src": "7119:847:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 350,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 347,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 318,
+                      "src": "7130:5:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 348,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1248,
+                        "src": "7138:3:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 349,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "7138:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "7130:18:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 351,
+                  "nodeType": "ExpressionStatement",
+                  "src": "7130:18:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 356,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 352,
+                      "name": "rFPBasic",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 336,
+                      "src": "7161:8:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPBasic_$466",
+                        "typeString": "contract RFPBasic"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 354,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "7172:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_RFPBasic_$466_$",
+                          "typeString": "function () returns (contract RFPBasic)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 353,
+                          "name": "RFPBasic",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 466,
+                          "src": "7176:8:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_RFPBasic_$466",
+                            "typeString": "contract RFPBasic"
+                          }
+                        }
+                      },
+                      "id": 355,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "7172:14:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPBasic_$466",
+                        "typeString": "contract RFPBasic"
+                      }
+                    },
+                    "src": "7161:25:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_RFPBasic_$466",
+                      "typeString": "contract RFPBasic"
+                    }
+                  },
+                  "id": 357,
+                  "nodeType": "ExpressionStatement",
+                  "src": "7161:25:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 362,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 358,
+                      "name": "rFPCriticalDate",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 338,
+                      "src": "7197:15:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPCriticalDate_$544",
+                        "typeString": "contract RFPCriticalDate"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 360,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "7215:20:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_RFPCriticalDate_$544_$",
+                          "typeString": "function () returns (contract RFPCriticalDate)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 359,
+                          "name": "RFPCriticalDate",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 544,
+                          "src": "7220:15:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_RFPCriticalDate_$544",
+                            "typeString": "contract RFPCriticalDate"
+                          }
+                        }
+                      },
+                      "id": 361,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "7215:22:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPCriticalDate_$544",
+                        "typeString": "contract RFPCriticalDate"
+                      }
+                    },
+                    "src": "7197:40:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_RFPCriticalDate_$544",
+                      "typeString": "contract RFPCriticalDate"
+                    }
+                  },
+                  "id": 363,
+                  "nodeType": "ExpressionStatement",
+                  "src": "7197:40:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 368,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 364,
+                      "name": "rFPEMD_Fee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 340,
+                      "src": "7440:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPEMD_Fee_$610",
+                        "typeString": "contract RFPEMD_Fee"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 366,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "7453:14:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_RFPEMD_Fee_$610_$",
+                          "typeString": "function () returns (contract RFPEMD_Fee)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 365,
+                          "name": "RFPEMD_Fee",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 610,
+                          "src": "7457:10:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_RFPEMD_Fee_$610",
+                            "typeString": "contract RFPEMD_Fee"
+                          }
+                        }
+                      },
+                      "id": 367,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "7453:16:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPEMD_Fee_$610",
+                        "typeString": "contract RFPEMD_Fee"
+                      }
+                    },
+                    "src": "7440:29:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_RFPEMD_Fee_$610",
+                      "typeString": "contract RFPEMD_Fee"
+                    }
+                  },
+                  "id": 369,
+                  "nodeType": "ExpressionStatement",
+                  "src": "7440:29:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 374,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 370,
+                      "name": "rFP_TDoc_InvAuth",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 342,
+                      "src": "7480:16:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFP_TDoc_InvAuth_$718",
+                        "typeString": "contract RFP_TDoc_InvAuth"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 372,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "7499:20:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_RFP_TDoc_InvAuth_$718_$",
+                          "typeString": "function () returns (contract RFP_TDoc_InvAuth)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 371,
+                          "name": "RFP_TDoc_InvAuth",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 718,
+                          "src": "7503:16:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_RFP_TDoc_InvAuth_$718",
+                            "typeString": "contract RFP_TDoc_InvAuth"
+                          }
+                        }
+                      },
+                      "id": 373,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "7499:22:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFP_TDoc_InvAuth_$718",
+                        "typeString": "contract RFP_TDoc_InvAuth"
+                      }
+                    },
+                    "src": "7480:41:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_RFP_TDoc_InvAuth_$718",
+                      "typeString": "contract RFP_TDoc_InvAuth"
+                    }
+                  },
+                  "id": 375,
+                  "nodeType": "ExpressionStatement",
+                  "src": "7480:41:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 380,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 376,
+                      "name": "rFPWorkItem",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 344,
+                      "src": "7532:11:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPWorkItem_$664",
+                        "typeString": "contract RFPWorkItem"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 378,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "7546:15:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_RFPWorkItem_$664_$",
+                          "typeString": "function () returns (contract RFPWorkItem)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 377,
+                          "name": "RFPWorkItem",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 664,
+                          "src": "7550:11:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_RFPWorkItem_$664",
+                            "typeString": "contract RFPWorkItem"
+                          }
+                        }
+                      },
+                      "id": 379,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "7546:17:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RFPWorkItem_$664",
+                        "typeString": "contract RFPWorkItem"
+                      }
+                    },
+                    "src": "7532:31:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_RFPWorkItem_$664",
+                      "typeString": "contract RFPWorkItem"
+                    }
+                  },
+                  "id": 381,
+                  "nodeType": "ExpressionStatement",
+                  "src": "7532:31:3"
+                },
+                {
+                  "assignments": [
+                    383
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 383,
+                      "name": "bidder",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 389,
+                      "src": "7576:13:3",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Bidder_$305",
+                        "typeString": "contract Bidder"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 382,
+                        "name": "Bidder",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 305,
+                        "src": "7576:6:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Bidder_$305",
+                          "typeString": "contract Bidder"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 387,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 385,
+                        "name": "this",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1289,
+                        "src": "7599:4:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_RFP_$402",
+                          "typeString": "contract RFP"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_RFP_$402",
+                          "typeString": "contract RFP"
+                        }
+                      ],
+                      "id": 384,
+                      "name": "Bidder",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 305,
+                      "src": "7592:6:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_contract$_Bidder_$305_$",
+                        "typeString": "type(contract Bidder)"
+                      }
+                    },
+                    "id": 386,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "7592:12:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Bidder_$305",
+                      "typeString": "contract Bidder"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "7576:28:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 389,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 345,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "7109:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 346,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "7119:0:3"
+            },
+            "scope": 402,
+            "src": "7097:869:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 400,
+              "nodeType": "Block",
+              "src": "10390:54:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 396,
+                      "name": "RFPStatusStrings",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 330,
+                      "src": "10408:16:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint16_$_t_string_storage_$",
+                        "typeString": "mapping(uint16 => string storage ref)"
+                      }
+                    },
+                    "id": 398,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 397,
+                      "name": "RFP_ACTIVE",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 914,
+                      "src": "10425:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint16",
+                        "typeString": "uint16"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "10408:28:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 395,
+                  "id": 399,
+                  "nodeType": "Return",
+                  "src": "10401:35:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 401,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getRFPStatusByStatusCode",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 392,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 391,
+                  "name": "_statusCode",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 401,
+                  "src": "10321:18:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 390,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "10321:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "10320:20:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 395,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 394,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 401,
+                  "src": "10377:6:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 393,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "10377:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "10376:8:3"
+            },
+            "scope": 402,
+            "src": "10287:157:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 403,
+        "src": "660:11118:3"
+      }
+    ],
+    "src": "0:11778:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.2",
+  "updatedAt": "2019-06-23T02:31:29.943Z"
+}

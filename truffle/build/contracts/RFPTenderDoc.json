@@ -1,0 +1,191 @@
+{
+  "contractName": "RFPTenderDoc",
+  "abi": [],
+  "bytecode": "0x608060405260008055600180556002805560038055348015601f57600080fd5b50603580602d6000396000f3006080604052600080fd00a165627a7a723058203f926fdfa9457436b7c268988ec9d1ee2b15f46ff7400c3662e16b33c7d50cb90029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a723058203f926fdfa9457436b7c268988ec9d1ee2b15f46ff7400c3662e16b33c7d50cb90029",
+  "sourceMap": "309:39:11:-;;;2450:1:18;2433:18;;2474:1;2458:17;;2499:1;2482:18;;2524:1;2507:18;;309:39:11;8:9:-1;5:2;;;30:1;27;20:12;5:2;309:39:11;;;;;;;",
+  "deployedSourceMap": "309:39:11:-;;;;;",
+  "source": "pragma solidity ^0.4.22;\n\n/* Author: Neeraj Kumar\n * \n * Being a public contract: This will host the following features:\n *  - launching the RFP\n *  - start and end date of accepting application (bids) \n *  - disclosure of bids only after the dead line of bidding is over  \n *  - \n*/\n\nimport \"./Utils.sol\";\n\n\ncontract RFPTenderDoc is Utils {\n    \n}\n",
+  "sourcePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPTenderDoc.sol",
+  "ast": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPTenderDoc.sol",
+    "exportedSymbols": {
+      "RFPTenderDoc": [
+        1658
+      ]
+    },
+    "id": 1659,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1654,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:11"
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Utils.sol",
+        "file": "./Utils.sol",
+        "id": 1655,
+        "nodeType": "ImportDirective",
+        "scope": 1659,
+        "sourceUnit": 2294,
+        "src": "285:21:11",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1656,
+              "name": "Utils",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2293,
+              "src": "334:5:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Utils_$2293",
+                "typeString": "contract Utils"
+              }
+            },
+            "id": 1657,
+            "nodeType": "InheritanceSpecifier",
+            "src": "334:5:11"
+          }
+        ],
+        "contractDependencies": [
+          1922,
+          1938,
+          1945,
+          1964,
+          1971,
+          1987,
+          1997,
+          2293
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1658,
+        "linearizedBaseContracts": [
+          1658,
+          2293,
+          1997,
+          1987,
+          1971,
+          1964,
+          1945,
+          1938,
+          1922
+        ],
+        "name": "RFPTenderDoc",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1659,
+        "src": "309:39:11"
+      }
+    ],
+    "src": "0:349:11"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/RFPTenderDoc.sol",
+    "exportedSymbols": {
+      "RFPTenderDoc": [
+        1658
+      ]
+    },
+    "id": 1659,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1654,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:11"
+      },
+      {
+        "absolutePath": "/home/dev/Documents/conduentHackathon-safe/truffle/contracts/Utils.sol",
+        "file": "./Utils.sol",
+        "id": 1655,
+        "nodeType": "ImportDirective",
+        "scope": 1659,
+        "sourceUnit": 2294,
+        "src": "285:21:11",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1656,
+              "name": "Utils",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2293,
+              "src": "334:5:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Utils_$2293",
+                "typeString": "contract Utils"
+              }
+            },
+            "id": 1657,
+            "nodeType": "InheritanceSpecifier",
+            "src": "334:5:11"
+          }
+        ],
+        "contractDependencies": [
+          1922,
+          1938,
+          1945,
+          1964,
+          1971,
+          1987,
+          1997,
+          2293
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1658,
+        "linearizedBaseContracts": [
+          1658,
+          2293,
+          1997,
+          1987,
+          1971,
+          1964,
+          1945,
+          1938,
+          1922
+        ],
+        "name": "RFPTenderDoc",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1659,
+        "src": "309:39:11"
+      }
+    ],
+    "src": "0:349:11"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.2",
+  "updatedAt": "2019-06-23T02:24:27.025Z"
+}
