@@ -15,7 +15,7 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "^4.17.1",
-    "express-fileupload": "^1.1.5",
+    "express-fileupload": "^1.1.9",
     "fs": "0.0.1-security",
     "http-errors": "~1.6.2",
     "ipfs-http-client": "^29.1.0",
